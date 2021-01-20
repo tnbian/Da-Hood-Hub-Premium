@@ -1,0 +1,2898 @@
+-- // Services
+local Players = game:GetService("Players")
+
+-- // Variables
+local LocalPlayer = Players.LocalPlayer
+local Whitelisted = {
+	"DraxeTheOverTaker",
+	"TheyCallMe6Ex",
+	"getcIappedImao",
+	"0V3RGHXST",
+	"mrelected",
+}
+local Blacklisted = {
+	"Krnlly"
+}
+
+-- // Whitelisted
+for i = 1, #Whitelisted do
+	local user = Whitelisted[i]
+	if (user == LocalPlayer.Name) then
+		Whitelisted = true
+		break
+	end
+end
+
+-- // Blacklisted
+for i = 1, #Blacklisted do
+	local user = Blacklisted[i]
+	if (user == LocalPlayer.Name) then
+		Blacklisted = true
+		break
+	end
+end
+
+-- // Stuff
+Whitelisted = (typeof(Whitelisted) == "boolean" and true or false)
+Blacklisted = (typeof(Blacklisted) == "boolean" and true or false)
+
+if (Blacklisted) then
+	LocalPlayer:Kick("Not Whitelisted! Stop trying to get into the script without being whielisted.")
+	while true do end return
+elseif (not Whitelisted and not Blacklisted) then
+	return
+end
+
+print("Whitelisted!")
+local notifSound = Instance.new("Sound",workspace)
+notifSound.PlaybackSpeed = 1.5
+notifSound.Volume = 0.15
+notifSound.SoundId = "rbxassetid://170765130"
+notifSound.PlayOnRemove = true
+notifSound:Destroy()
+game.StarterGui:SetCore("SendNotification", {Title = "DaHoodPremium", Text = "DaHoodHubPremkum Has Successfully Loaded Thanks For Buying, dont leak!", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
+local DaHoodHubPremium = Instance.new("ScreenGui")
+local DaHoodHubPremium_2 = Instance.new("Frame")
+local Combat = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Misc = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Movemant = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Basics = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local FlyX = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Autofarm = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local NoclipB = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local DaHoodHub = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Headless = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local BuyBag = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local BagAll = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Unban = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local GodBullet = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_14 = Instance.new("UICorner")
+local GodBlock = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local GodBlock_2 = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local CombatFrame = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local FreeFists = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local AutostompP = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local Fling = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local Silentaim = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local Aimbot = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local FullGodmode = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local Goto = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local Bag = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local TargetGUI = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local playername = Instance.new("TextBox")
+local MaskSpam = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local RagdollReset = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local NoSlowdown = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_31 = Instance.new("UICorner")
+local Aimlock = Instance.new("TextButton")
+local UICorner_32 = Instance.new("UICorner")
+local Aimlock_2 = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+local MiscFrame = Instance.new("Frame")
+local MiscFrame_2 = Instance.new("UICorner")
+local Uimakercredit = Instance.new("TextLabel")
+local MiscFrame_3 = Instance.new("UICorner")
+local ScriptCredit = Instance.new("TextLabel")
+local MiscFrame_4 = Instance.new("UICorner")
+local Ad = Instance.new("TextLabel")
+local MiscFrame_5 = Instance.new("UICorner")
+local close = Instance.new("TextButton")
+local UICorner_34 = Instance.new("UICorner")
+local ScriptCredit_2 = Instance.new("TextLabel")
+local MiscFrame_6 = Instance.new("UICorner")
+local UICorner_35 = Instance.new("UICorner")
+local MovemantFrame = Instance.new("Frame")
+local UICorner_36 = Instance.new("UICorner")
+local JumpPower = Instance.new("TextButton")
+local UICorner_37 = Instance.new("UICorner")
+local Walkspeed = Instance.new("TextButton")
+local UICorner_38 = Instance.new("UICorner")
+local AnmationChanger = Instance.new("TextButton")
+local UICorner_39 = Instance.new("UICorner")
+local InfYeled = Instance.new("TextButton")
+local UICorner_40 = Instance.new("UICorner")
+local NoJumpCooldown = Instance.new("TextButton")
+local UICorner_41 = Instance.new("UICorner")
+local Soon = Instance.new("TextButton")
+local UICorner_42 = Instance.new("UICorner")
+local close_2 = Instance.new("TextButton")
+local UICorner_43 = Instance.new("UICorner")
+local ScriptCredit_3 = Instance.new("TextLabel")
+local MiscFrame_7 = Instance.new("UICorner")
+playername.FocusLost:connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+		if (string.sub(string.lower(v.Name),1,string.len(playername.Text))) == string.lower(playername.Text) then
+			playername.Text = v.Name
+		end
+	end
+end)
+
+ShrinkName()
+function findPlayer(name)
+	name = name:lower()
+	if name == 'me' then
+		return game:GetService'Players'.LocalPlayer
+	end
+	for i,v in pairs(game:GetService'Players':GetPlayers()) do
+		if v.Name:lower():find(name) == 1 then
+			return v
+		end
+	end
+end
+
+--Properties:
+
+DaHoodHubPremium.Name = "Da Hood Hub Premium"
+DaHoodHubPremium.Parent = game.CoreGui
+
+DaHoodHubPremium_2.Name = "DaHoodHubPremium"
+DaHoodHubPremium_2.Parent = DaHoodHubPremium
+DaHoodHubPremium_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+DaHoodHubPremium_2.BorderColor3 = Color3.fromRGB(0, 255, 127)
+DaHoodHubPremium_2.Position = UDim2.new(0.146169454, 0, 0.184046239, 0)
+DaHoodHubPremium_2.Size = UDim2.new(0, 516, 0, 332)
+DaHoodHubPremium_2.Active  = true
+
+Combat.Name = "Combat"
+Combat.Parent = DaHoodHubPremium_2
+Combat.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Combat.Position = UDim2.new(0, 0, 0.254501253, 0)
+Combat.Size = UDim2.new(0, 106, 0, 50)
+Combat.Font = Enum.Font.SourceSans
+Combat.Text = "Combat"
+Combat.TextColor3 = Color3.fromRGB(255, 255, 255)
+Combat.TextScaled = true
+Combat.TextSize = 14.000
+Combat.TextWrapped = true
+Combat.MouseButton1Down:Connect(function()
+	CombatFrame.Visible = true
+	BasicsFrame.Visible = false
+	TelportsFrame.Visible = false
+end)
+
+
+UICorner.Parent = Combat
+
+Misc.Name = "Misc"
+Misc.Parent = DaHoodHubPremium_2
+Misc.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Misc.Position = UDim2.new(0, 0, 0.530408204, 0)
+Misc.Size = UDim2.new(0, 106, 0, 50)
+Misc.Font = Enum.Font.SourceSans
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc.TextScaled = true
+Misc.TextSize = 14.000
+Misc.TextWrapped = true
+Misc.MouseButton1Down:Connect(function()
+	MiscFrame.Visible = true
+	BasicsFrame.Visible = false
+	CombatFrame.Visible = false
+	MovemantFrame.Visble = false
+end)
+
+UICorner_2.Parent = Misc
+
+Movemant.Name = "Movemant"
+Movemant.Parent = DaHoodHubPremium_2
+Movemant.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Movemant.Position = UDim2.new(0, 0, 0.792084038, 0)
+Movemant.Size = UDim2.new(0, 106, 0, 50)
+Movemant.Font = Enum.Font.SourceSans
+Movemant.Text = "Movemant"
+Movemant.TextColor3 = Color3.fromRGB(255, 255, 255)
+Movemant.TextScaled = true
+Movemant.TextSize = 14.000
+Movemant.TextWrapped = true
+Movemant.MouseButton1Down:Connect(function()
+	MovemantFrame.Visble = true
+	MiscFrame.Visible = false
+	BasicsFrame.Visible = false
+	CombatFrame.Visible = false
+end)
+
+UICorner_3.Parent = Movemant
+
+Basics.Name = "Basics"
+Basics.Parent = DaHoodHubPremium_2
+Basics.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Basics.Position = UDim2.new(0, 0, 0.0240963846, 0)
+Basics.Size = UDim2.new(0, 106, 0, 50)
+Basics.Font = Enum.Font.SourceSans
+Basics.Text = "Basics"
+Basics.TextColor3 = Color3.fromRGB(255, 255, 255)
+Basics.TextScaled = true
+Basics.TextSize = 14.000
+Basics.TextWrapped = true
+
+UICorner_4.Parent = Basics
+
+FlyX.Name = "FlyX"
+FlyX.Parent = Basics
+FlyX.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+FlyX.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FlyX.Position = UDim2.new(1.10093379, 0, -0.00540521741, 0)
+FlyX.Size = UDim2.new(0, 107, 0, 50)
+FlyX.Font = Enum.Font.SourceSans
+FlyX.Text = "Fly [X]"
+FlyX.TextColor3 = Color3.fromRGB(255, 255, 255)
+FlyX.TextScaled = true
+FlyX.TextSize = 14.000
+FlyX.TextWrapped = true
+FlyX.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Fly Enabled X to disable/enable";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	local plr = game.Players.LocalPlayer
+	local mouse = plr:GetMouse()
+
+	localplayer = plr
+
+	if workspace:FindFirstChild("Core") then
+		workspace.Core:Destroy()
+	end
+
+	local Core = Instance.new("Part")
+	Core.Name = "Core"
+	Core.Size = Vector3.new(0.05, 0.05, 0.05)
+
+	spawn(function()
+		Core.Parent = workspace
+		local Weld = Instance.new("Weld", Core)
+		Weld.Part0 = Core
+		Weld.Part1 = localplayer.Character.LowerTorso
+		Weld.C0 = CFrame.new(0, 0, 0)
+	end)
+
+	workspace:WaitForChild("Core")
+
+	local torso = workspace.Core
+	flying = true
+	local speed=32
+	local keys={a=false,d=false,w=false,s=false}
+	local e1
+	local e2
+	local function start()
+		local pos = Instance.new("BodyPosition",torso)
+		local gyro = Instance.new("BodyGyro",torso)
+		pos.Name="EPIXPOS"
+		pos.maxForce = Vector3.new(math.huge, math.huge, math.huge)
+		pos.position = torso.Position
+		gyro.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+		gyro.cframe = torso.CFrame
+		repeat
+			wait()
+			localplayer.Character.Humanoid.PlatformStand=true
+			local new=gyro.cframe - gyro.cframe.p + pos.position
+			if not keys.w and not keys.s and not keys.a and not keys.d then
+				speed=32
+			end
+			if keys.w then
+				new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+				speed=speed+0
+			end
+			if keys.s then
+				new = new - workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+				speed=speed+0
+			end
+			if keys.d then
+				new = new * CFrame.new(speed,0,0)
+				speed=speed+0
+			end
+			if keys.a then
+				new = new * CFrame.new(-speed,0,0)
+				speed=speed+0
+			end
+			if speed>10 then
+				speed=50
+			end
+			pos.position=new.p
+			if keys.w then
+				gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(-math.rad(speed*0),0,0)
+			elseif keys.s then
+				gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(math.rad(speed*0),0,0)
+			else
+				gyro.cframe = workspace.CurrentCamera.CoordinateFrame
+			end
+		until flying == false
+		if gyro then gyro:Destroy() end
+		if pos then pos:Destroy() end
+		flying=false
+		localplayer.Character.Humanoid.PlatformStand=false
+		speed=32
+	end
+	e1=mouse.KeyDown:connect(function(key)
+		if not torso or not torso.Parent then flying=false e1:disconnect() e2:disconnect() return end
+		if key=="w" then
+			keys.w=true
+		elseif key=="s" then
+			keys.s=true
+		elseif key=="a" then
+			keys.a=true
+		elseif key=="d" then
+			keys.d=true
+		elseif key=="x" then
+			if flying==true then
+				flying=false
+			else
+				flying=true
+				start()
+			end
+		end
+	end)
+	e2=mouse.KeyUp:connect(function(key)
+		if key=="w" then
+			keys.w=false
+		elseif key=="s" then
+			keys.s=false
+		elseif key=="a" then
+			keys.a=false
+		elseif key=="d" then
+			keys.d=false
+		end
+	end)
+	start() 							
+end)
+
+UICorner_5.Parent = FlyX
+
+Autofarm.Name = "Autofarm"
+Autofarm.Parent = Basics
+Autofarm.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Autofarm.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Autofarm.Position = UDim2.new(1.09149981, 0, 1.51441443, 0)
+Autofarm.Size = UDim2.new(0, 107, 0, 50)
+Autofarm.Font = Enum.Font.SourceSans
+Autofarm.Text = "Autofarm"
+Autofarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+Autofarm.TextScaled = true
+Autofarm.TextSize = 14.000
+Autofarm.TextWrapped = true
+Autofarm.MouseButton1Down:Connect(function()
+	local notifSound = Instance.new("Sound",workspace)
+	notifSound.PlaybackSpeed = 1.5
+	notifSound.Volume = 0.15
+	notifSound.SoundId = "rbxassetid://170765130"
+	notifSound.PlayOnRemove = true
+	notifSound:Destroy()
+	game.StarterGui:SetCore("SendNotification", {Title = "DaHoodPremium", Text = "Autofarm Opened!", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
+	loadstring(game:HttpGet("https://pastebin.com/raw/74VJ07iY", true))()
+end)
+
+UICorner_6.Parent = Autofarm
+
+NoclipB.Name = "Noclip [B]"
+NoclipB.Parent = Basics
+NoclipB.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+NoclipB.BorderColor3 = Color3.fromRGB(255, 255, 255)
+NoclipB.Position = UDim2.new(1.09149981, 0, 2.88270283, 0)
+NoclipB.Size = UDim2.new(0, 107, 0, 50)
+NoclipB.Font = Enum.Font.SourceSans
+NoclipB.Text = "Noclip [B]"
+NoclipB.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoclipB.TextScaled = true
+NoclipB.TextSize = 14.000
+NoclipB.TextWrapped = true
+NoclipB.MouseButton1Down:Connect(function()
+	noclip = false
+	game:GetService('RunService').Stepped:connect(function()
+		if noclip then
+			game:service'Players'.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	plr = game:service'Players'.LocalPlayer
+	mouse = plr:GetMouse()
+	mouse.KeyDown:connect(function(key)
+
+		if key == "b" then
+			noclip = not noclip
+			game:service'Players'.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+end)
+
+UICorner_7.Parent = NoclipB
+
+DaHoodHub.Name = "Da Hood Hub"
+DaHoodHub.Parent = Basics
+DaHoodHub.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+DaHoodHub.BorderColor3 = Color3.fromRGB(255, 255, 255)
+DaHoodHub.Position = UDim2.new(2.22744417, 0, -0.0172971785, 0)
+DaHoodHub.Size = UDim2.new(0, 107, 0, 50)
+DaHoodHub.Font = Enum.Font.SourceSans
+DaHoodHub.Text = "Da Hood Hub V.1"
+DaHoodHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+DaHoodHub.TextScaled = true
+DaHoodHub.TextSize = 14.000
+DaHoodHub.TextWrapped = true
+
+UICorner_8.Parent = DaHoodHub
+
+Headless.Name = "Headless"
+Headless.Parent = Basics
+Headless.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Headless.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Headless.Position = UDim2.new(2.22744417, 0, 1.51441395, 0)
+Headless.Size = UDim2.new(0, 107, 0, 50)
+Headless.Font = Enum.Font.SourceSans
+Headless.Text = "Headless"
+Headless.TextColor3 = Color3.fromRGB(255, 255, 255)
+Headless.TextScaled = true
+Headless.TextSize = 14.000
+Headless.TextWrapped = true
+Headless.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = " Headless Enabled (Nobody Can See Ya ;)";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+        --[[
+IronBrew:tm: obfuscation; Version 2.7.2
+]]
+	return(function(Headlessmoddedbybinga_llIIIIlllIlIllIIIlIlI,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl)local Headlessmoddedbybinga_lllIlllllllIIllIIIIllIIll=string.char;local Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=string.sub;local Headlessmoddedbybinga_llIllIIIlIl=table.concat;local Headlessmoddedbybinga_IIlIllllIll=math.ldexp;local Headlessmoddedbybinga_IIlIllIllllIIIlllIII=getfenv or function()return _ENV end;local Headlessmoddedbybinga_IIllIlIllIIIIl=select;local Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI=unpack or table.unpack;local Headlessmoddedbybinga_lIlIlIllIIIlIll=tonumber;local function Headlessmoddedbybinga_llIlllllI(Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI)local Headlessmoddedbybinga_IlIlIlllIl,Headlessmoddedbybinga_IIlIlllll,Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl="","",{}local Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI=256;local Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll={}for Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=0,Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI-1 do Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl]=Headlessmoddedbybinga_lllIlllllllIIllIIIIllIIll(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl)end;local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=1;local function Headlessmoddedbybinga_llIIIIlllIlIllIIIlIlI()local Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_lIlIlIllIIIlIll(Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll(Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl),36)Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl+1;local Headlessmoddedbybinga_IIlIlllll=Headlessmoddedbybinga_lIlIlIllIIIlIll(Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll(Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl+Headlessmoddedbybinga_IlIlIlllIl-1),36)Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl+Headlessmoddedbybinga_IlIlIlllIl;return Headlessmoddedbybinga_IIlIlllll end;Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_lllIlllllllIIllIIIIllIIll(Headlessmoddedbybinga_llIIIIlllIlIllIIIlIlI())Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl[1]=Headlessmoddedbybinga_IlIlIlllIl;while Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl<#Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI do local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_llIIIIlllIlIllIIIlIlI()if Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl]then Headlessmoddedbybinga_IIlIlllll=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl]else Headlessmoddedbybinga_IIlIlllll=Headlessmoddedbybinga_IlIlIlllIl..Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll(Headlessmoddedbybinga_IlIlIlllIl,1,1)end;Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI]=Headlessmoddedbybinga_IlIlIlllIl..Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll(Headlessmoddedbybinga_IIlIlllll,1,1)Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl[#Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl+1],Headlessmoddedbybinga_IlIlIlllIl,Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI=Headlessmoddedbybinga_IIlIlllll,Headlessmoddedbybinga_IIlIlllll,Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI+1 end;return table.concat(Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl)end;local Headlessmoddedbybinga_lIlIlIllIIIlIll=Headlessmoddedbybinga_llIlllllI('24724627524524327524626E26T26V26Y26Y24624227923O27924627427524423S27L27K27627924427Q24627J27527M27V24623Z27924527H27526P26V26Z26R24524127925I26Y26V26N26R26C26D24524D27926226X27C26Y28E28G28I24524F27925X27226V26C26V26T26A28U28524626626R26V26Q28427926026R26T27128B27925U26R26D26A26C26X26N24524C27925F26E26E28I25E26X28J26X24524829D29F27125Z26A26A29227228926W26A24524E27926626B26Z26V26W26X27329B23N2AH29926Y26A27225U27326D26E28F26N2AW29M2AL26T28A2962AK2AU29C27527226B26P28A23P29D28826R2B22AZ28G2B22A926W2B52BA24625H27326K28A28C27525C29F26A29Z24L24524527926W26R26927Z27R2AF27926326V26D26D26Y29L26D27L29R28X2AL25X26X27E2AO26R2762782BB29926K29B2CV27A28Q26Y2BR26926V27326A24625V27I23T27927Z25227R24627U2DF2CB2462DJ27K27H2DM2792782DP2752402DL2DG2BX27K27U27427X27Y2792DS2DH2DV2DK2E42DO2DG2AG2E428W2E42DX27T27Q2E12802E42DI2DG2C52E82E627K29S27X27424A2E32E227424B24623Q27K28M2E027K2DE2DG2EL2E72DG2E927R2ER2E22EU2752DJ2742EX2EZ27K2A32F32DD2EV27R2F727K2EN2F92EP2DQ27W2E22F02FF2EW24623R2FW2E52E127X2C52G527527H2EI2E227H27U2FY2752492EH2F42FO2DY2FU27S2EO2E427824M27K2BG23M2G32E22FZ2FP2GM2462FS27R2FA27K2GQ27K2AQ23K2DG27Z2EI23L27I27K2HC27524W2FE24624O27Q2GU2422H82752HK2742HN29J2GI27923Y27T27P2CA27S27N2HU27528227928M2G02HS27524S27V2E127Z27Z2I62H029628728929I27528S28H28J28L28N28P27D2IM28U28W27528Y29029229426C2BR29829A2452G227529E29G25G27326P2A72A926T2AB26R2AD2452DU2IW25S2912IJ2C52752C72C92DG2GW2461224127023225Y2CM27529U29W26C29Y2A024624X27I2962F52GY2E42H12DN2GZ2DR2DG2DU2ES2462DX2FG27Q2AG27X27U2IV2G32C529S27527X27H2KT2FN2GD2FJ27928C2FM2JU2EK2GZ2KF2792H32I52GZ2KK2E22KN2G02KQ2I12KT2G62462KW2G32KZ2H927G2E52GF2KM2I22EJ2F62L92GZ2LC2752782KL2LH27Q2742LJ2E52LL27S2LO2KY2462L02GC2LT27K2L52LR2DG');local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=(bit or bit32);local Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl and Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl.bxor or function(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,Headlessmoddedbybinga_IlIlIlllIl)local Headlessmoddedbybinga_IIlIlllll,Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll,Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=1,0,10 while Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl>0 and Headlessmoddedbybinga_IlIlIlllIl>0 do local Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI,Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl%2,Headlessmoddedbybinga_IlIlIlllIl%2 if Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI~=Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll then Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll+Headlessmoddedbybinga_IIlIlllll end Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,Headlessmoddedbybinga_IlIlIlllIl,Headlessmoddedbybinga_IIlIlllll=(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl-Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI)/2,(Headlessmoddedbybinga_IlIlIlllIl-Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll)/2,Headlessmoddedbybinga_IIlIlllll*2 end if Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl<Headlessmoddedbybinga_IlIlIlllIl then Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl end while Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl>0 do local Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl%2 if Headlessmoddedbybinga_IlIlIlllIl>0 then Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll+Headlessmoddedbybinga_IIlIlllll end Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,Headlessmoddedbybinga_IIlIlllll=(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl-Headlessmoddedbybinga_IlIlIlllIl)/2,Headlessmoddedbybinga_IIlIlllll*2 end return Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll end local function Headlessmoddedbybinga_IIlIlllll(Headlessmoddedbybinga_IIlIlllll,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,Headlessmoddedbybinga_IlIlIlllIl)if Headlessmoddedbybinga_IlIlIlllIl then local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=(Headlessmoddedbybinga_IIlIlllll/2^(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl-1))%2^((Headlessmoddedbybinga_IlIlIlllIl-1)-(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl-1)+1);return Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl-Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl%1;else local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=2^(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl-1);return(Headlessmoddedbybinga_IIlIlllll%(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl+Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl)>=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl)and 1 or 0;end;end;local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=1;local function Headlessmoddedbybinga_IlIlIlllIl()local Headlessmoddedbybinga_IIlIlllll,Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll,Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI,Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_llIIIIlllIlIllIIIlIlI(Headlessmoddedbybinga_lIlIlIllIIIlIll,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl+3);Headlessmoddedbybinga_IIlIlllll=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll(Headlessmoddedbybinga_IIlIlllll,150)Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll(Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll,150)Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll(Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI,150)Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll(Headlessmoddedbybinga_IlIlIlllIl,150)Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl+4;return(Headlessmoddedbybinga_IlIlIlllIl*16777216)+(Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI*65536)+(Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll*256)+Headlessmoddedbybinga_IIlIlllll;end;local function Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl()local Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll(Headlessmoddedbybinga_llIIIIlllIlIllIIIlIlI(Headlessmoddedbybinga_lIlIlIllIIIlIll,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl),150);Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl+1;return Headlessmoddedbybinga_IlIlIlllIl;end;local function Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI()local Headlessmoddedbybinga_IIlIlllll,Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_llIIIIlllIlIllIIIlIlI(Headlessmoddedbybinga_lIlIlIllIIIlIll,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl+2);Headlessmoddedbybinga_IIlIlllll=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll(Headlessmoddedbybinga_IIlIlllll,150)Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll(Headlessmoddedbybinga_IlIlIlllIl,150)Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl+2;return(Headlessmoddedbybinga_IlIlIlllIl*256)+Headlessmoddedbybinga_IIlIlllll;end;local function Headlessmoddedbybinga_llIlllllI()local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl();local Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl();local Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=1;local Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll=(Headlessmoddedbybinga_IIlIlllll(Headlessmoddedbybinga_IlIlIlllIl,1,20)*(2^32))+Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl;local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IIlIlllll(Headlessmoddedbybinga_IlIlIlllIl,21,31);local Headlessmoddedbybinga_IlIlIlllIl=((-1)^Headlessmoddedbybinga_IIlIlllll(Headlessmoddedbybinga_IlIlIlllIl,32));if(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl==0)then if(Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll==0)then return Headlessmoddedbybinga_IlIlIlllIl*0;else Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=1;Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=0;end;elseif(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl==2047)then return(Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll==0)and(Headlessmoddedbybinga_IlIlIlllIl*(1/0))or(Headlessmoddedbybinga_IlIlIlllIl*(0/0));end;return Headlessmoddedbybinga_IIlIllllIll(Headlessmoddedbybinga_IlIlIlllIl,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl-1023)*(Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll+(Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll/(2^52)));end;local Headlessmoddedbybinga_IIIIllIIIIlIIlIlIllIIl=Headlessmoddedbybinga_IlIlIlllIl;local function Headlessmoddedbybinga_IIlIllllIll(Headlessmoddedbybinga_IlIlIlllIl)local Headlessmoddedbybinga_IIlIlllll;if(not Headlessmoddedbybinga_IlIlIlllIl)then Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IIIIllIIIIlIIlIlIllIIl();if(Headlessmoddedbybinga_IlIlIlllIl==0)then return'';end;end;Headlessmoddedbybinga_IIlIlllll=Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll(Headlessmoddedbybinga_lIlIlIllIIIlIll,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl+Headlessmoddedbybinga_IlIlIlllIl-1);Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl+Headlessmoddedbybinga_IlIlIlllIl;local Headlessmoddedbybinga_IlIlIlllIl={}for Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=1,#Headlessmoddedbybinga_IIlIlllll do Headlessmoddedbybinga_IlIlIlllIl[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl]=Headlessmoddedbybinga_lllIlllllllIIllIIIIllIIll(Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll(Headlessmoddedbybinga_llIIIIlllIlIllIIIlIlI(Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll(Headlessmoddedbybinga_IIlIlllll,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl)),150))end return Headlessmoddedbybinga_llIllIIIlIl(Headlessmoddedbybinga_IlIlIlllIl);end;local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl;local function Headlessmoddedbybinga_llIllIIIlIl(...)return{...},Headlessmoddedbybinga_IIllIlIllIIIIl('#',...)end local function Headlessmoddedbybinga_lllIlllllllIIllIIIIllIIll()local Headlessmoddedbybinga_llIIIIlllIlIllIIIlIlI={};local Headlessmoddedbybinga_lIlIlIllIIIlIll={};local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl={};local Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI={[#{"1 + 1 = 111";"1 + 1 = 111";}]=Headlessmoddedbybinga_lIlIlIllIIIlIll,[#{"1 + 1 = 111";"1 + 1 = 111";{537;535;984;218};}]=nil,[#{{893;582;931;658};{54;314;303;292};{225;751;743;647};"1 + 1 = 111";}]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,[#{{461;458;660;182};}]=Headlessmoddedbybinga_llIIIIlllIlIllIIIlIlI,};local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl()local Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll={}for Headlessmoddedbybinga_IIlIlllll=1,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl do local Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl();local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl;if(Headlessmoddedbybinga_IlIlIlllIl==0)then Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=(Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl()~=0);elseif(Headlessmoddedbybinga_IlIlIlllIl==1)then Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_llIlllllI();elseif(Headlessmoddedbybinga_IlIlIlllIl==3)then Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IIlIllllIll();end;Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll[Headlessmoddedbybinga_IIlIlllll]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl;end;Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI[3]=Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl();for Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI=1,Headlessmoddedbybinga_IlIlIlllIl()do local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl();if(Headlessmoddedbybinga_IIlIlllll(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,1,1)==0)then local Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll=Headlessmoddedbybinga_IIlIlllll(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,2,3);local Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl=Headlessmoddedbybinga_IIlIlllll(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,4,6);local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl={Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI(),Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI(),nil,nil};if(Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll==0)then Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{{291;138;328;56};"1 + 1 = 111";"1 + 1 = 111";}]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI();Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";{395;7;285;925};"1 + 1 = 111";{780;622;565;396};}]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI();elseif(Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll==1)then Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("zuI")]=Headlessmoddedbybinga_IlIlIlllIl();elseif(Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll==2)then Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("DIv")]=Headlessmoddedbybinga_IlIlIlllIl()-(2^16)elseif(Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll==3)then Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("l2d")]=Headlessmoddedbybinga_IlIlIlllIl()-(2^16)Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("A6Dj")]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI();end;if(Headlessmoddedbybinga_IIlIlllll(Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl,1,1)==1)then Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("GE")]=Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("et")]]end if(Headlessmoddedbybinga_IIlIlllll(Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl,2,2)==1)then Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("BHx")]=Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("8q8")]]end if(Headlessmoddedbybinga_IIlIlllll(Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl,3,3)==1)then Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("ccM0")]=Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("2zBs")]]end Headlessmoddedbybinga_llIIIIlllIlIllIIIlIlI[Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl;end end;for Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=1,Headlessmoddedbybinga_IlIlIlllIl()do Headlessmoddedbybinga_lIlIlIllIIIlIll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl-1]=Headlessmoddedbybinga_lllIlllllllIIllIIIIllIIll();end;return Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI;end;local function Headlessmoddedbybinga_llIIIIlllIlIllIIIlIlI(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl,Headlessmoddedbybinga_IlIlIlllIl,Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI)Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl==true and Headlessmoddedbybinga_lllIlllllllIIllIIIIllIIll())or Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl;return(function(...)local Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[1];local Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[3];local Headlessmoddedbybinga_lIlIlIllIIIlIll=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[2];local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_llIllIIIlIl local Headlessmoddedbybinga_IlIlIlllIl=1;local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=-1;local Headlessmoddedbybinga_IIlIllllIll={};local Headlessmoddedbybinga_lllIlllllllIIllIIIIllIIll={...};local Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl=Headlessmoddedbybinga_IIllIlIllIIIIl('#',...)-1;local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl={};local Headlessmoddedbybinga_IIlIlllll={};for Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=0,Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl do if(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl>=Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll)then Headlessmoddedbybinga_IIlIllllIll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl-Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll]=Headlessmoddedbybinga_lllIlllllllIIllIIIIllIIll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl+1];else Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl]=Headlessmoddedbybinga_lllIlllllllIIllIIIIllIIll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl+#{"1 + 1 = 111";}];end;end;local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl-Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll+1 local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl;local Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll;while true do Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("s")];if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll<=#("k63djMq6usLMI00")then if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll<=#("TfCk9DV")then if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll<=#("W5V")then if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll<=#("r")then if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll==#("")then Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Jp")]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Uu3")]];else Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("sO7")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("vJ")]];end;elseif Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll==#("CC")then Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";}];else local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("sU")]Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl](Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl+1])end;elseif Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll<=#("qzpgH")then if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll==#("8cGZ")then local Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll;Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Hk")]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("6ot")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("hX")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("lfL")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("4qC1")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("WH")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("BRD")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("611Y")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("KE")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("98p")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("UYVU")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("IP")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("bmf")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Jnug")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("oQ")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("pQ8")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("2gm3")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("mz")]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";{940;508;978;339};"1 + 1 = 111";}]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("mR")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Ls6")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("G9Jp")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("IH")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("CtW")];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("4d")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("nhQ")];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Vn")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("QQp")];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("At")]Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll](Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI(Headlessmoddedbybinga_IIlIlllll,Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll+1,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{{325;523;214;537};{705;380;925;194};{797;722;48;146};}]))Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("s8")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("yLb")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("xzOv")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("zU")]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("nTD")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("5E")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("qpY")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("rrAV")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Rb")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("YWR")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("JePa")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Hh")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("UKQ")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("nq16")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("ig")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("mdi")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("OeuK")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("3u")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Gla")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{{636;489;408;96};{670;240;698;25};"1 + 1 = 111";"1 + 1 = 111";}]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("HK")]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("B5l")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("V2")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("h7B")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("7rLn")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("TZ")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("rIQ")];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("zh")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("1G6")];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("F5")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("suf")];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("mX")]Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll](Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI(Headlessmoddedbybinga_IIlIlllll,Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll+1,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("9hr")]))Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Mq")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("ech")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("vjAK")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("J0")]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Ch2")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("ix")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{{938;755;501;423};{941;248;955;523};{448;292;559;848};}]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("qYJR")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("rM")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("eho")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("XCmQ")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("BH")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("uR0")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("phMd")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("2V")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("47Z")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("seeu")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("pO")]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("hlL")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Dl")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("ggL")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("nT8y")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Kr")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("O4M")];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("oc")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{{549;162;113;376};{444;95;508;952};"1 + 1 = 111";}];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("l6")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("POa")];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Pr")]Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll](Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI(Headlessmoddedbybinga_IIlIlllll,Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll+1,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("RL2")]))Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";{850;259;971;440};}]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("foJ")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("rEBo")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];do return end;else Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("UM")]]=(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("qfx")]~=0);end;elseif Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll>#("zqPcv5")then Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("IC")]]=Headlessmoddedbybinga_llIIIIlllIlIllIIIlIlI(Headlessmoddedbybinga_lIlIlIllIIIlIll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("nCn")]],nil,Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI);else do return end;end;elseif Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll<=#("SFZRlarn18O")then if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll<=#("CikiKC6MI")then if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll>#{"1 + 1 = 111";{237;843;878;723};{743;990;784;865};{756;812;85;901};"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";{602;818;678;148};}then Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("j8")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("GR5")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("e0rt")]];else Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("xN")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("sGR")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("0FOA")];end;elseif Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll==#("6C8T6LJmpZ")then local Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("s7")]Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl](Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl+1])else Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Xi")]]();end;elseif Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll<=#("H9yHyKnieKzst")then if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll==#("s2Tp03KVSSHD")then if(Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";{414;702;403;579};}]]~=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("v12o")])then Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;else Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Fjc")];end;else local Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("N3")]Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IlIlIlllIl]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IlIlIlllIl](Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI(Headlessmoddedbybinga_IIlIlllll,Headlessmoddedbybinga_IlIlIlllIl+1,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("jQH")]))end;elseif Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll==#("nHboRXpGlJBHKj")then Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("719")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Tf")]];else Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("XV")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("tAf")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("ZPIr")]];end;elseif Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll<=#("bQHiPeNTZ7z5TWrQ95kaLdv")then if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll<=#("FejgssTpUeTbkzYuLYl")then if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll<=#("r2GT42BLAj37uYNK5")then if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll==#("AHnjkOdpFLh0AX2d")then local Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("4L")];local Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Hsb")]];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll+1]=Headlessmoddedbybinga_IlIlIlllIl;Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll]=Headlessmoddedbybinga_IlIlIlllIl[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("qefp")]];else local Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("PF")]Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IlIlIlllIl]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IlIlIlllIl](Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI(Headlessmoddedbybinga_IIlIlllll,Headlessmoddedbybinga_IlIlIlllIl+1,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("HG0")]))end;elseif Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll==#("NIAmA2hZLkWRxVnzdz")then do return end;else Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";{648;225;217;553};}]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("3qO")]];end;elseif Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll<=#("diR2QOyZEKTgeqyabGt9P")then if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll==#("tJDqIi04Bvynar6QUIcc")then Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("CB")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("TzP")];else Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("r2")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("4RQ")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("HZln")]];end;elseif Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll>#("p1eRB8Vl3Tz97Yhzzfo9Ki")then Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("b3")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("mvi")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("ta8Z")]];else Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Jgi")];end;elseif Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll<=#("T1qgevVW7NDdRzKhkfSIM9ocDYr")then if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll<=#("CXcdhEv0j1R0h7CxEUA9Z8e31")then if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll==#("WTMnNpeBujKz6ndU8sz2APH2")then local Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("j2")];local Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("CS7")]];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IlIlIlllIl+1]=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll;Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IlIlIlllIl]=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("z0rh")]];else Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("9S")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";{961;465;946;164};{333;852;191;551};}]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{{541;597;585;202};"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";}];end;elseif Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll==#("SyrFESjlGRMn5oBWQMrWeYm5f9")then Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("kh")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("FiO")];else Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("kY")]]();end;elseif Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll<=#("F9lglUP42W51BBnAGCGce7fTcpfE4")then if Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll>#("vAE7OmuLAEqtI9VV0v1yQEJ7RH3C")then Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Hv")]]=(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("sPu")]~=0);else if(Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("vC")]]~=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("x1Tp")])then Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;else Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("cII")];end;end;elseif Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll>#{{518;91;51;555};"1 + 1 = 111";"1 + 1 = 111";{718;833;982;278};{785;256;796;75};"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";{160;813;171;594};{315;602;972;497};{346;830;757;708};{357;882;760;368};{647;806;973;166};{491;934;269;192};{77;971;334;245};{340;296;874;486};"1 + 1 = 111";{245;295;598;866};{106;800;413;445};"1 + 1 = 111";"1 + 1 = 111";{554;702;17;177};"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";{89;171;707;831};{150;166;51;950};"1 + 1 = 111";"1 + 1 = 111";}then local Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl;local Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll;Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";"1 + 1 = 111";}]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("lZL")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("hB")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("UjP")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("M5iV")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("uf")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("kB8")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("9Vb6")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("pu")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("xE5")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("btAI")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{{256;100;735;319};{133;278;38;319};}]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("tIx")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("v3dh")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("RN")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("uQQ")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("8xBm")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("g5")];Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("dQN")]];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll+1]=Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl;Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll]=Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("0B7q")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("XE")]Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll](Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll+1])Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("sl")]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("apI")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("y4")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";}]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{{231;596;949;285};{166;459;408;944};{421;452;409;375};"1 + 1 = 111";}]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{{203;741;392;63};{863;327;651;436};}]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("gvv")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("z2mo")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("yN")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("y2Z")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("OYvT")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Hb")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";}]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";{480;333;216;987};"1 + 1 = 111";"1 + 1 = 111";}]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("6O")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("TjK")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("EYMG")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("B5")];Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("l2o")]];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll+1]=Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl;Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll]=Headlessmoddedbybinga_IlIIIlIIllIIIlllIIIlIl[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("pE5g")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Qo")]Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll](Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll+1])Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";{87;771;848;547};}]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("iZI")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("so")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";"1 + 1 = 111";"1 + 1 = 111";}]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("JXV4")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("iK")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("282")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("5yYr")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("eZ")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("tre")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("DQZa")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("f6")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("l5q")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";{758;423;111;207};{244;864;282;885};"1 + 1 = 111";}]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Ei")]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("0ML")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("MI")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("eYY")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("ZtSN")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{{337;590;530;617};"1 + 1 = 111";}]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("PdZ")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("1EA6")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Dk")]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("uOF")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("pv")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Xs5")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{{783;129;321;422};{748;586;781;516};{361;159;143;728};"1 + 1 = 111";}]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("LM")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Q3l")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("1cCa")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("bo")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("uYF")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("gmZV")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";{944;485;665;713};}]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("eMs")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("X9MC")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("3o")]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("MWP")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{{291;843;111;505};"1 + 1 = 111";}]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("nR8")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("oWW5")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("m0")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("tup")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("peiv")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("C7")]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("imC")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("ye")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("XXk")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("C82q")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("al")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("aaV")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("HLuC")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("g0")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("BAH")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("hJSb")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";{674;577;243;921};}]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("sxW")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";"1 + 1 = 111";{991;987;417;466};"1 + 1 = 111";}]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("LD")]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{{537;297;992;879};"1 + 1 = 111";{175;884;557;329};}]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("re")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("88e")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("227B")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("gh")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";"1 + 1 = 111";{825;249;635;146};}];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("RS")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Oxd")];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("c2")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("v0O")];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("zp")]Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll](Headlessmoddedbybinga_lIlllIIIlIIlllIIIlllIIIlI(Headlessmoddedbybinga_IIlIlllll,Headlessmoddedbybinga_llIllIlllIlIlIIlIIIllll+1,Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("BBp")]))Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("JY")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("aSf")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("ijjI")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Xn")]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("kTA")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("pb")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Ile")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("W4gj")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";"1 + 1 = 111";}]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("i3Q")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("itJl")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("NO")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("SeJ")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("lOkn")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("YF")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("cAs")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("QdV1")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("a5")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{"1 + 1 = 111";"1 + 1 = 111";{898;552;242;234};}]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("VhPK")];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("9u")]]=Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("SEN")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("BQ")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("sDI")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("KaCE")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("y7")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("2p5")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("xBWi")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("7S")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("VaY")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("mCJv")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("UP")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("sE9")]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("s4V0")]];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{{196;662;141;368};{516;194;536;637};}]][Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("jZJ")]]=Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("nSUd")];Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("Pb")]]=(Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("1CJ")]~=0);Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl=Headlessmoddedbybinga_IlllllIllIllIIlIIIIIll[Headlessmoddedbybinga_IlIlIlllIl];Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("AbC")]]=Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#{{328;816;329;438};{288;530;536;136};}]];else Headlessmoddedbybinga_IIlIlllll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("ye")]]=Headlessmoddedbybinga_llIIIIlllIlIllIIIlIlI(Headlessmoddedbybinga_lIlIlIllIIIlIll[Headlessmoddedbybinga_IIIlllIlIllllIlIlllIl[#("07o")]],nil,Headlessmoddedbybinga_IIlllllllIIlllIlIlIIllllI);end;Headlessmoddedbybinga_IlIlIlllIl=Headlessmoddedbybinga_IlIlIlllIl+1;end;end);end;return Headlessmoddedbybinga_llIIIIlllIlIllIIIlIlI(true,{},Headlessmoddedbybinga_IIlIllIllllIIIlllIII())();end)(string.byte,table.insert,setmetatable);
+end)
+
+UICorner_9.Parent = Headless
+
+BuyBag.Name = "Buy Bag"
+BuyBag.Parent = Basics
+BuyBag.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+BuyBag.BorderColor3 = Color3.fromRGB(255, 255, 255)
+BuyBag.Position = UDim2.new(2.22475672, 0, 2.87459469, 0)
+BuyBag.Size = UDim2.new(0, 107, 0, 50)
+BuyBag.Font = Enum.Font.SourceSans
+BuyBag.Text = "Buy Bag"
+BuyBag.TextColor3 = Color3.fromRGB(255, 255, 255)
+BuyBag.TextScaled = true
+BuyBag.TextSize = 14.000
+BuyBag.TextWrapped = true
+BuyBag.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Hey noob, to bad to bag people, bagging all :)";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	bag = true
+	repeat
+
+		local cor = coroutine.wrap(function()
+			if not game.Players.LocalPlayer.Character:FindFirstChild("[BrownBag]") then
+				takingbag = true
+				local cor = coroutine.wrap(function()
+					game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-314.580566, 51.1788902, -727.484558))
+				end)
+				cor()			
+				wait(1)
+				fireclickdetector(workspace.Ignored.Shop["[BrownBag] - $25"].ClickDetector, 4)
+				wait(0.5)
+				game.Players.LocalPlayer.Backpack["[BrownBag]"].Parent = game.Players.LocalPlayer.Character
+				takingbag = false
+			end
+		end)
+		cor()
+		if takingbag == false then
+			for i, v  in pairs(game.Players:GetPlayers()) do
+				if v.Character:FindFirstChild("Christmas_Sock") == nil and v.Character:FindFirstChildOfClass("ForceField") == nil and v.Character ~= game.Players.LocalPlayer.Character then
+					local chars = v.Character
+					if game.Players.LocalPlayer.Character:FindFirstChild("[BrownBag]") then
+						game.Players.LocalPlayer.Character["[BrownBag]"]:Activate()
+					end
+					game.Players.LocalPlayer.Character:MoveTo(v.Character.UpperTorso.Position)
+				end
+				wait(0.005)
+			end
+		end
+		wait()
+	until bag == false	
+end)
+
+
+
+UICorner_10.Parent = BuyBag
+
+BagAll.Name = "Bag All"
+BagAll.Parent = Basics
+BagAll.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+BagAll.BorderColor3 = Color3.fromRGB(255, 255, 255)
+BagAll.Position = UDim2.new(3.33643961, 0, -0.0108107626, 0)
+BagAll.Size = UDim2.new(0, 107, 0, 50)
+BagAll.Font = Enum.Font.SourceSans
+BagAll.Text = "Bag All"
+BagAll.TextColor3 = Color3.fromRGB(255, 255, 255)
+BagAll.TextScaled = true
+BagAll.TextSize = 14.000
+BagAll.TextWrapped = true
+BagAll.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Hey noob, to bad to bag people, bagging all :)";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	bag = true
+	repeat
+
+		local cor = coroutine.wrap(function()
+			if not game.Players.LocalPlayer.Character:FindFirstChild("[BrownBag]") then
+				takingbag = true
+				local cor = coroutine.wrap(function()
+					game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-314.580566, 51.1788902, -727.484558))
+				end)
+				cor()			
+				wait(1)
+				fireclickdetector(workspace.Ignored.Shop["[BrownBag] - $25"].ClickDetector, 4)
+				wait(0.5)
+				game.Players.LocalPlayer.Backpack["[BrownBag]"].Parent = game.Players.LocalPlayer.Character
+				takingbag = false
+			end
+		end)
+		cor()
+		if takingbag == false then
+			for i, v  in pairs(game.Players:GetPlayers()) do
+				if v.Character:FindFirstChild("Christmas_Sock") == nil and v.Character:FindFirstChildOfClass("ForceField") == nil and v.Character ~= game.Players.LocalPlayer.Character then
+					local chars = v.Character
+					if game.Players.LocalPlayer.Character:FindFirstChild("[BrownBag]") then
+						game.Players.LocalPlayer.Character["[BrownBag]"]:Activate()
+					end
+					game.Players.LocalPlayer.Character:MoveTo(v.Character.UpperTorso.Position)
+				end
+				wait(0.005)
+			end
+		end
+		wait()
+	until bag == false	
+end)
+
+UICorner_11.Parent = BagAll
+
+Unban.Name = "Unban"
+Unban.Parent = Basics
+Unban.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Unban.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Unban.Position = UDim2.new(3.44154739, 0, 1.49747717, 0)
+Unban.Size = UDim2.new(0, 107, 0, 50)
+Unban.Font = Enum.Font.SourceSans
+Unban.Text = "Unban"
+Unban.TextColor3 = Color3.fromRGB(255, 255, 255)
+Unban.TextScaled = true
+Unban.TextSize = 14.000
+Unban.TextWrapped = true
+Unban.MouseButton1Down:Connect(function()
+	Unban.MouseButton1Down:Connect(function()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "[DaHoodHubP]";
+			Text = "Unbaned! [50% chance unban, if dose not work try again. We are updating it to 100%!]";
+			Icon = "rbxassetid://6234818097";
+			Duration = 10;
+		})
+		game.Players.LocalPlayer.Character.Humanoid:Destroy()
+		function Unban()
+			repeat wait() until game.Players.LocalPlayer.Character:FindFirstChild("BodyEffects") and game.Players.LocalPlayer.Character.BodyEffects:FindFirstChild("BreakingParts") and not game.Players.LocalPlayer.Character:FindFirstChild("ForceField_TESTING")
+			local loaded = Instance.new("Folder")
+			loaded.Name = "FULLY_LOADED_CHAR"
+			loaded.Parent = game.Players.LocalPlayer.Character
+			game.Players.LocalPlayer.Character.BodyEffects.SpecialParts:Destroy()
+		end
+		wait(5.3)
+		game.Players.LocalPlayer.CharacterAdded:Connect(function()Unban()end)Unban()
+	end)
+end)
+
+
+UICorner_12.Parent = Unban
+
+GodBullet.Name = "GodBullet"
+GodBullet.Parent = Basics
+GodBullet.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+GodBullet.BorderColor3 = Color3.fromRGB(255, 255, 255)
+GodBullet.Position = UDim2.new(3.44154739, 0, 2.86270285, 0)
+GodBullet.Size = UDim2.new(0, 107, 0, 50)
+GodBullet.Font = Enum.Font.SourceSans
+GodBullet.Text = "GodBullet"
+GodBullet.TextColor3 = Color3.fromRGB(255, 255, 255)
+GodBullet.TextScaled = true
+GodBullet.TextSize = 14.000
+GodBullet.TextWrapped = true
+GodBullet.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Godbullet Enabed.";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	game.Players.LocalPlayer.Character.BodyEffects.Defense:Destroy()
+	game.Players.LocalPlayer.Character.BodyEffects.Armor:Destroy()
+	local def = Instance.new("NumberValue",game.Players.LocalPlayer.Character.BodyEffects)
+	def.Name = "Defense"
+	def.Value = 100
+	local arm = Instance.new("NumberValue",game.Players.LocalPlayer.Character.BodyEffects)
+	arm.Name = "Armor"
+end)
+
+UICorner_13.Parent = GodBullet
+
+TextLabel.Parent = Basics
+TextLabel.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextLabel.Position = UDim2.new(1.09416819, 0, 5.77632093, 0)
+TextLabel.Size = UDim2.new(0, 368, 0, 31)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Yes, this is the basics frame. LOL"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner_14.Parent = TextLabel
+
+GodBlock.Name = "GodBlock"
+GodBlock.Parent = Basics
+GodBlock.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+GodBlock.BorderColor3 = Color3.fromRGB(255, 255, 255)
+GodBlock.Position = UDim2.new(1.3849436, 0, 4.34270287, 0)
+GodBlock.Size = UDim2.new(0, 107, 0, 50)
+GodBlock.Font = Enum.Font.SourceSans
+GodBlock.Text = "GodBlock [F]"
+GodBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+GodBlock.TextScaled = true
+GodBlock.TextSize = 14.000
+GodBlock.TextWrapped = true
+GodBlock.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Godblock [F] To enabled/disable, have to hold fists.";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	local ps = game:GetService("Players")
+	local lp = ps.LocalPlayer
+	local char = lp.Character
+
+	char.BodyEffects.Defense:Destroy()
+
+	local Clone2 = Instance.new("NumberValue")
+	Clone2.Name = "Defense"
+	Clone2.Parent = char.BodyEffects	
+end)
+
+UICorner_15.Parent = GodBlock
+
+GodBlock_2.Name = "GodBlock"
+GodBlock_2.Parent = Basics
+GodBlock_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+GodBlock_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+GodBlock_2.Position = UDim2.new(2.94154739, 0, 4.34270287, 0)
+GodBlock_2.Size = UDim2.new(0, 107, 0, 50)
+GodBlock_2.Font = Enum.Font.SourceSans
+GodBlock_2.Text = "Godbullet"
+GodBlock_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+GodBlock_2.TextScaled = true
+GodBlock_2.TextSize = 14.000
+GodBlock_2.TextWrapped = true
+GodBlock_2.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Sorry for the same button, will be fixing it and adding some else.";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+end)
+
+UICorner_16.Parent = GodBlock_2
+
+CombatFrame.Name = "CombatFrame"
+CombatFrame.Parent = DaHoodHubPremium_2
+CombatFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+CombatFrame.Position = UDim2.new(-0.000700898876, 0, 0.00903614424, 0)
+CombatFrame.Size = UDim2.new(0, 517, 0, 329)
+CombatFrame.Visible = false
+
+UICorner_17.Parent = CombatFrame
+
+FreeFists.Name = "Free Fists"
+FreeFists.Parent = CombatFrame
+FreeFists.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+FreeFists.Position = UDim2.new(0.482795089, 0, 0.202555299, 0)
+FreeFists.Size = UDim2.new(0, 129, 0, 50)
+FreeFists.Font = Enum.Font.SourceSans
+FreeFists.Text = "Free Fists"
+FreeFists.TextColor3 = Color3.fromRGB(255, 255, 255)
+FreeFists.TextScaled = true
+FreeFists.TextSize = 14.000
+FreeFists.TextWrapped = true
+FreeFists.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Free Fists Enabled [Reset To Disable]";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	game.Players.LocalPlayer.Character:FindFirstChild("LeftHand")["LeftWrist"]:Destroy()
+	game.Players.LocalPlayer.Character:FindFirstChild("RightHand")["RightWrist"]:Destroy()
+	game:GetService("RunService").RenderStepped:Connect(function()
+		game.Players.LocalPlayer.Character:FindFirstChild("LeftHand").CFrame = CFrame.new(game.Players.LocalPlayer:GetMouse().Hit.p)
+		game.Players.LocalPlayer.Character:FindFirstChild("RightHand").CFrame = CFrame.new(game.Players.LocalPlayer:GetMouse().Hit.p)
+	end)
+end)
+
+UICorner_18.Parent = FreeFists
+
+AutostompP.Name = "Autostomp [P]"
+AutostompP.Parent = CombatFrame
+AutostompP.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AutostompP.Position = UDim2.new(0.458638698, 0, 0.423740804, 0)
+AutostompP.Size = UDim2.new(0, 129, 0, 50)
+AutostompP.Font = Enum.Font.SourceSans
+AutostompP.Text = "Autostomp [P]"
+AutostompP.TextColor3 = Color3.fromRGB(255, 255, 255)
+AutostompP.TextScaled = true
+AutostompP.TextSize = 14.000
+AutostompP.TextWrapped = true
+AutostompP.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Autstomp Enaled P to disable/enable";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	Toggle = false
+
+	while wait(.5) do
+		local mouse = game.Players.LocalPlayer:GetMouse()
+
+		if Toggle == false then
+			game.ReplicatedStorage.MainEvent:FireServer("Stomp")
+			mouse.KeyDown:connect(function(k)
+				if k == "P" then
+					if Toggle == false then 
+						Toggle = true
+						print('Off')
+					elseif Toggle == true then 
+						print('On')
+						Toggle = false
+					end
+				end
+			end)
+		end
+	end	
+end)
+
+UICorner_19.Parent = AutostompP
+
+Fling.Name = "Fling"
+Fling.Parent = CombatFrame
+Fling.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Fling.Position = UDim2.new(0.208004594, 0, 0.204107419, 0)
+Fling.Size = UDim2.new(0, 129, 0, 50)
+Fling.Font = Enum.Font.SourceSans
+Fling.Text = "Fling"
+Fling.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fling.TextScaled = true
+Fling.TextSize = 14.000
+Fling.TextWrapped = true
+Fling.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Fling [Have To Have Hacks/Hair Too]";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	spawn(function()
+		while true do game:GetService("RunService").Heartbeat:wait()
+			for i,v in pairs(game.Players:GetPlayers()) do
+				if v == game.Players.LocalPlayer == false then
+					game.Players.LocalPlayer.MaximumSimulationRadius = math.pow(math.huge,math.huge)*math.huge
+					game.Players.LocalPlayer.SimulationRadius = math.pow(math.huge,math.huge)*math.huge
+					v.MaximumSimulationRadius = 0
+					v.SimulationRadius = 0
+					game:GetService("RunService").Stepped:wait()
+				end
+			end
+		end
+	end)
+
+	local Player = game:GetService("Players").LocalPlayer
+	local Players = game:GetService("Players")
+	local HatList = {}
+	local i = 0
+	for _,l in pairs(Player.Character:GetChildren()) do
+		if l:IsA("Accessory") then if i>0 then l.Parent = workspace  end i = i + 1 end;
+	end
+	wait(.1)
+
+
+
+	for _,v in pairs(workspace:GetDescendants()) do
+		if v.Name == "Handle" and v:IsA("BasePart") and v.Parent:IsA("Accessory") and v:IsDescendantOf(Player.Character)==false and Players:GetPlayerFromCharacter(v.Parent.Parent)==nil then
+			table.insert(HatList,v)
+		end
+	end
+
+	for _,hat in pairs(HatList) do
+		hat.Parent = workspace
+		hat.Position = Player.Character.HumanoidRootPart.Position + Player.Character.HumanoidRootPart.CFrame.lookVector * 5
+		local BodyPos = Instance.new("BodyPosition",hat)
+		local BodyAng = Instance.new("BodyAngularVelocity",hat)
+		BodyAng.AngularVelocity = Vector3.new(0,9e12,0)
+		BodyAng.P = 9e12
+		BodyPos.MaxForce = Vector3.new(9e9,9e9,9e9)
+		BodyPos.P = 9e8
+		spawn(function()
+			while wait() do
+				if pcall(function()
+						hat.CanCollide = false
+						BodyPos.Position = Player.Character.HumanoidRootPart.Position + Vector3.new(math.random(-2,2),math.random(-2,2),math.random(-2,2))
+					end) then
+				else
+					BodyPos:Destroy()
+					hat.CanCollide = true
+				end
+			end
+		end)
+
+	end
+end)
+
+UICorner_20.Parent = Fling
+
+Silentaim.Name = "Silent aim"
+Silentaim.Parent = CombatFrame
+Silentaim.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Silentaim.Position = UDim2.new(0.744131923, 0, 0.42412436, 0)
+Silentaim.Size = UDim2.new(0, 129, 0, 50)
+Silentaim.Font = Enum.Font.SourceSans
+Silentaim.Text = "Silent Aim"
+Silentaim.TextColor3 = Color3.fromRGB(255, 255, 255)
+Silentaim.TextScaled = true
+Silentaim.TextSize = 14.000
+Silentaim.TextWrapped = true
+Silentaim.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Works best with; [Lmg,Smg,Ak,Drumgun,Rev,Silencer]";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	-- // Index Version // --
+	local mt = getrawmetatable(game)
+	local backupindex = mt.__index
+	local ValiantAimHacks = loadstring(game:HttpGetAsync("https://gist.githubusercontent.com/pixelheadx/fff108da96922e834036a6619ce07ff0/raw/cf8bc54198875dbef85a2b9711583cbd05e4d69a/gistfile1.txt"))()
+	ValiantAimHacks["TeamCheck"] = false
+	setreadonly(mt, false)
+
+	mt.__index = newcclosure(function(t, k)
+		if t:IsA("Mouse") and (k == "Hit" or k == "Target") then
+			if ValiantAimHacks.checkSilentAim() then
+				local CPlayer = rawget(ValiantAimHacks, "Selected")
+				if CPlayer and CPlayer.Character and CPlayer.Character.FindFirstChild(CPlayer.Character, "Head") then
+					return (k == "Hit" and CPlayer.Character.Head.CFrame or CPlayer.Character.Head)
+				end
+			end
+		end
+		return backupindex(t, k)
+	end)
+	setreadonly(mt, true)
+end)
+
+
+UICorner_21.Parent = Silentaim
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = CombatFrame
+Aimbot.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Aimbot.Position = UDim2.new(0.749891579, 0, 0.20256725, 0)
+Aimbot.Size = UDim2.new(0, 129, 0, 50)
+Aimbot.Font = Enum.Font.SourceSans
+Aimbot.Text = "Aimbot [Matince]"
+Aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.TextScaled = true
+Aimbot.TextSize = 14.000
+Aimbot.TextWrapped = true
+Aimbot.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "This is on matince, and might not work right, if you still want to use it u still can B to enable/disable.";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	PLAYER  = game.Players.LocalPlayer
+	MOUSE   = PLAYER:GetMouse()
+	CC      = game.Workspace.CurrentCamera
+
+	ENABLED      = false
+	ESP_ENABLED  = false
+
+	_G.FREE_FOR_ALL = true
+
+	_G.BIND        = 118
+	_G.ESP_BIND    = 98
+	_G.CHANGE_AIM  = 'q'
+
+	_G.AIM_AT = 'Head'
+
+	wait(1)
+
+	function GetNearestPlayerToMouse()
+		local PLAYERS      = {}
+		local PLAYER_HOLD  = {}
+		local DISTANCES    = {}
+		for i, v in pairs(game.Players:GetPlayers()) do
+			if v ~= PLAYER then
+				table.insert(PLAYERS, v)
+			end
+		end
+		for i, v in pairs(PLAYERS) do
+			if _G.FREE_FOR_ALL == false then
+				if v and (v.Character) ~= nil and v.TeamColor ~= PLAYER.TeamColor then
+					local AIM = v.Character:FindFirstChild(_G.AIM_AT)
+					if AIM ~= nil then
+						local DISTANCE                 = (AIM.Position - game.Workspace.CurrentCamera.CoordinateFrame.p).magnitude
+						local RAY                      = Ray.new(game.Workspace.CurrentCamera.CoordinateFrame.p, (MOUSE.Hit.p - CC.CoordinateFrame.p).unit * DISTANCE)
+						local HIT,POS                  = game.Workspace:FindPartOnRay(RAY, game.Workspace)
+						local DIFF                     = math.floor((POS - AIM.Position).magnitude)
+						PLAYER_HOLD[v.Name .. i]       = {}
+						PLAYER_HOLD[v.Name .. i].dist  = DISTANCE
+						PLAYER_HOLD[v.Name .. i].plr   = v
+						PLAYER_HOLD[v.Name .. i].diff  = DIFF
+						table.insert(DISTANCES, DIFF)
+					end
+				end
+			elseif _G.FREE_FOR_ALL == true then
+				local AIM = v.Character:FindFirstChild(_G.AIM_AT)
+				if AIM ~= nil then
+					local DISTANCE                 = (AIM.Position - game.Workspace.CurrentCamera.CoordinateFrame.p).magnitude
+					local RAY                      = Ray.new(game.Workspace.CurrentCamera.CoordinateFrame.p, (MOUSE.Hit.p - CC.CoordinateFrame.p).unit * DISTANCE)
+					local HIT,POS                  = game.Workspace:FindPartOnRay(RAY, game.Workspace)
+					local DIFF                     = math.floor((POS - AIM.Position).magnitude)
+					PLAYER_HOLD[v.Name .. i]       = {}
+					PLAYER_HOLD[v.Name .. i].dist  = DISTANCE
+					PLAYER_HOLD[v.Name .. i].plr   = v
+					PLAYER_HOLD[v.Name .. i].diff  = DIFF
+					table.insert(DISTANCES, DIFF)
+				end
+			end
+		end
+
+		if unpack(DISTANCES) == nil then
+			return false
+		end
+
+		local L_DISTANCE = math.floor(math.min(unpack(DISTANCES)))
+		if L_DISTANCE > 20 then
+			return false
+		end
+
+		for i, v in pairs(PLAYER_HOLD) do
+			if v.diff == L_DISTANCE then
+				return v.plr
+			end
+		end
+		return false
+	end
+
+	GUI_MAIN                           = Instance.new('ScreenGui', game.CoreGui)
+	GUI_TARGET                         = Instance.new('TextLabel', GUI_MAIN)
+	GUI_AIM_AT                         = Instance.new('TextLabel', GUI_MAIN)
+
+	GUI_MAIN.Name                      = 'AIMBOT'
+
+	GUI_TARGET.Size                    = UDim2.new(0,200,0,30)
+	GUI_TARGET.BackgroundTransparency  = 0.5
+	GUI_TARGET.BackgroundColor         = BrickColor.new('Fossil')
+	GUI_TARGET.BorderSizePixel         = 0
+	GUI_TARGET.Position                = UDim2.new(0.5,-100,0,0)
+	GUI_TARGET.Text                    = 'AIMBOT : OFF'
+	GUI_TARGET.TextColor3              = Color3.new(1,1,1)
+	GUI_TARGET.TextStrokeTransparency  = 1
+	GUI_TARGET.TextWrapped             = true
+	GUI_TARGET.FontSize                = 'Size24'
+	GUI_TARGET.Font                    = 'SourceSansBold'
+
+	GUI_AIM_AT.Size                    = UDim2.new(0,200,0,20)
+	GUI_AIM_AT.BackgroundTransparency  = 0.5
+	GUI_AIM_AT.BackgroundColor         = BrickColor.new('Fossil')
+	GUI_AIM_AT.BorderSizePixel         = 0
+	GUI_AIM_AT.Position                = UDim2.new(0.5,-100,0,30)
+	GUI_AIM_AT.Text                    = 'AIMING : HEAD'
+	GUI_AIM_AT.TextColor3              = Color3.new(1,1,1)
+	GUI_AIM_AT.TextStrokeTransparency  = 1
+	GUI_AIM_AT.TextWrapped             = true
+	GUI_AIM_AT.FontSize                = 'Size18'
+	GUI_AIM_AT.Font                    = 'SourceSansBold'
+
+	local TRACK = false
+
+	function CREATE(BASE, TEAM)
+		local ESP_MAIN                   = Instance.new('BillboardGui', PLAYER.PlayerGui)
+		local ESP_DOT                    = Instance.new('Frame', ESP_MAIN)
+		local ESP_NAME                   = Instance.new('TextLabel', ESP_MAIN)
+
+		ESP_MAIN.Name                    = 'ESP'
+		ESP_MAIN.Adornee                 = BASE
+		ESP_MAIN.AlwaysOnTop             = true
+		ESP_MAIN.ExtentsOffset           = Vector3.new(0, 1, 0)
+		ESP_MAIN.Size                    = UDim2.new(0, 5, 0, 5)
+
+		ESP_DOT.Name                     = 'DOT'
+		ESP_DOT.BackgroundColor          = BrickColor.new('Bright red')
+		ESP_DOT.BackgroundTransparency   = 0.3
+		ESP_DOT.BorderSizePixel          = 0
+		ESP_DOT.Position                 = UDim2.new(-0.5, 0, -0.5, 0)
+		ESP_DOT.Size                     = UDim2.new(2, 0, 2, 0)
+		ESP_DOT.Visible                  = true
+		ESP_DOT.ZIndex                   = 10
+
+		ESP_NAME.Name                    = 'NAME'
+		ESP_NAME.BackgroundColor3        = Color3.new(255, 255, 255)
+		ESP_NAME.BackgroundTransparency  = 1
+		ESP_NAME.BorderSizePixel         = 0
+		ESP_NAME.Position                = UDim2.new(0, 0, 0, -40)
+		ESP_NAME.Size                    = UDim2.new(1, 0, 10, 0)
+		ESP_NAME.Visible                 = true
+		ESP_NAME.ZIndex                  = 10
+		ESP_NAME.Font                    = 'ArialBold'
+		ESP_NAME.FontSize                = 'Size14'
+		ESP_NAME.Text                    = BASE.Parent.Name:upper()
+		ESP_NAME.TextColor               = BrickColor.new('Bright red')
+	end
+
+	function CLEAR()
+		for _,v in pairs(PLAYER.PlayerGui:children()) do
+			if v.Name == 'ESP' and v:IsA('BillboardGui') then
+				v:Destroy()
+			end
+		end
+	end
+
+	function FIND()
+		CLEAR()
+		TRACK = true
+		spawn(function()
+			while wait() do
+				if TRACK then
+					CLEAR()
+					for i,v in pairs(game.Players:GetChildren()) do
+						if v.Character and v.Character:FindFirstChild('Head') then
+							if _G.FREE_FOR_ALL == false then
+								if v.TeamColor ~= PLAYER.TeamColor then
+									if v.Character:FindFirstChild('Head') then
+										CREATE(v.Character.Head, true)
+									end
+								end
+							else
+								if v.Character:FindFirstChild('Head') then
+									CREATE(v.Character.Head, true)
+								end
+							end
+						end
+					end
+				end
+			end
+			wait(1)
+		end)
+	end
+
+	MOUSE.KeyDown:connect(function(KEY)
+		KEY = KEY:lower():byte()
+		if KEY == _G.BIND then
+			ENABLED = true
+		end
+	end)
+
+	MOUSE.KeyUp:connect(function(KEY)
+		KEY = KEY:lower():byte()
+		if KEY == _G.BIND then
+			ENABLED = false
+		end
+	end)
+
+	MOUSE.KeyDown:connect(function(KEY)
+		KEY = KEY:lower():byte()
+		if KEY == _G.ESP_BIND then
+			if ESP_ENABLED == false then
+				FIND()
+				ESP_ENABLED = true
+				print('ESP : ON')
+			elseif ESP_ENABLED == true then
+				wait()
+				CLEAR()
+				TRACK = false
+				ESP_ENABLED = false
+				print('ESP : OFF')
+			end
+		end
+	end)
+
+	MOUSE.KeyDown:connect(function(KEY)
+		if KEY == _G.CHANGE_AIM then
+			if _G.AIM_AT == 'Head' then
+				_G.AIM_AT = 'Torso'
+				GUI_AIM_AT.Text = 'AIMING : TORSO'
+			elseif _G.AIM_AT == 'Torso' then
+				_G.AIM_AT = 'Head'
+				GUI_AIM_AT.Text = 'AIMING : HEAD'
+			end
+		end
+	end)
+
+	game:GetService('RunService').RenderStepped:connect(function()
+		if ENABLED then
+			local TARGET = GetNearestPlayerToMouse()
+			if (TARGET ~= false) then
+				local AIM = TARGET.Character:FindFirstChild(_G.AIM_AT)
+				if AIM then
+					CC.CoordinateFrame = CFrame.new(CC.CoordinateFrame.p, AIM.CFrame.p)
+				end
+				GUI_TARGET.Text = 'AIMBOT : '.. TARGET.Name:sub(1, 5)
+			else
+				GUI_TARGET.Text = 'AIMBOT : OFF'
+			end
+		end
+	end)
+
+	repeat
+		wait()
+		if ESP_ENABLED == true then
+			FIND()
+		end
+	until ESP_ENABLED == false
+end)
+
+UICorner_22.Parent = Aimbot
+
+FullGodmode.Name = "FullGodmode"
+FullGodmode.Parent = CombatFrame
+FullGodmode.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+FullGodmode.Position = UDim2.new(0.601944089, 0, 0.0305491239, 0)
+FullGodmode.Size = UDim2.new(0, 129, 0, 50)
+FullGodmode.Font = Enum.Font.SourceSans
+FullGodmode.Text = "Full Godmode"
+FullGodmode.TextColor3 = Color3.fromRGB(255, 255, 255)
+FullGodmode.TextScaled = true
+FullGodmode.TextSize = 14.000
+FullGodmode.TextWrapped = true
+FullGodmode.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Godmode Enabled [Reset To Disable]";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+local name = game.Players.LocalPlayer.Name
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
+game.Players.LocalPlayer.Character:ClearAllChildren()
+local lol =    game.Workspace:WaitForChild(name)
+local money = Instance.new("Folder",game.Players.LocalPlayer.Character);money.Name = "FULLY_LOADED_CHAR"
+lol.Parent = game.Workspace.Players
+game.Players.LocalPlayer.Character:WaitForChild("BodyEffects")
+game.Players.LocalPlayer.Character.BodyEffects.BreakingParts:Destroy()
+end)
+
+UICorner_23.Parent = FullGodmode
+
+Goto.Name = "Goto"
+Goto.Parent = CombatFrame
+Goto.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Goto.Position = UDim2.new(0.010153763, 0, 0.216036066, 0)
+Goto.Size = UDim2.new(0, 80, 0, 50)
+Goto.Font = Enum.Font.SourceSans
+Goto.Text = "Goto"
+Goto.TextColor3 = Color3.fromRGB(255, 255, 255)
+Goto.TextScaled = true
+Goto.TextSize = 14.000
+Goto.TextWrapped = true
+Goto.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "To lazy? Alright, going to the player.";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	local TargetPlr = playername.Text;
+	wait(.30)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[TargetPlr].Character.HumanoidRootPart.CFrame
+end)
+
+UICorner_24.Parent = Goto
+
+Bag.Name = "Bag"
+Bag.Parent = CombatFrame
+Bag.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Bag.Position = UDim2.new(0.00778969005, 0, 0.666466177, 0)
+Bag.Size = UDim2.new(0, 79, 0, 50)
+Bag.Font = Enum.Font.SourceSans
+Bag.Text = "Bag"
+Bag.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bag.TextScaled = true
+Bag.TextSize = 14.000
+Bag.TextWrapped = true
+Bag.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Bagging.";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	local TargetPlr = playername.Text
+	function getRoot(char)
+		local rootPart = char:FindFirstChild('HumanoidRootPart') or char:FindFirstChild('Torso') or char:FindFirstChild('UpperTorso')
+		return rootPart
+	end
+
+	if TargetPlr and game.Players[TargetPlr].Character.BodyEffects['K.O'].Value == false then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop['[BrownBag] - $25'].Head.CFrame
+		wait(.30)
+		fireclickdetector(game.Workspace.Ignored.Shop['[BrownBag] - $25'].ClickDetector)
+		game.Players.LocalPlayer.Backpack:WaitForChild("[BrownBag]").Parent = game.Players.LocalPlayer.Character
+
+		local A_1 = "[DaHoodHubPremium] Attempting To Bag " .. TargetPlr .. "." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		wait(.5)
+		repeat
+			pcall(function()
+				wait()
+				getRoot(game.Players[TargetPlr].Character).CFrame = getRoot(game.Players.LocalPlayer.Character).CFrame + Vector3.new(1,3,0)
+				game.Players.LocalPlayer.Character["[BrownBag]"]:Activate()
+			end)
+		until game.Players[TargetPlr].Character:FindFirstChild("Christmas_Sock")
+		local A_1 = "[DaHoodHubPremium] Successfully Bagged " .. TargetPlr .. "." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+	elseif game.Players[TargetPlr].Character.BodyEffects['K.O'].Value == false then
+		local A_1 = "[DaHoodHubPremium] " .. TargetPlr .. " Is Already Bagged." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+	end
+end)
+
+UICorner_25.Parent = Bag
+
+TargetGUI.Name = "Target GUI"
+TargetGUI.Parent = CombatFrame
+TargetGUI.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TargetGUI.Position = UDim2.new(0.00938006118, 0, 0.450990111, 0)
+TargetGUI.Size = UDim2.new(0, 80, 0, 50)
+TargetGUI.Font = Enum.Font.SourceSans
+TargetGUI.Text = "Lock [Still Target]"
+TargetGUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+TargetGUI.TextScaled = true
+TargetGUI.TextSize = 14.000
+TargetGUI.TextWrapped = true
+TargetGUI.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Targeting Player";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	local localPlayer     = game:GetService("Players").LocalPlayer;
+	local localCharacter  = localPlayer.Character;
+	local TargetPlr       = playername.Text;
+	wait(0) local A_1 = "[DaHoodPremiumTargetSystem] " .. TargetPlr .. "Has Been Locked." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+
+
+	if TargetPlr and game.Players[TargetPlr].Character.BodyEffects['K.O'].Value == false then
+		pcall(function()
+
+			game.Players.LocalPlayer.Character.LeftHand.Size = Vector3.new(4,4,4)
+			localCharacter.LeftHand.LeftWrist:Destroy();
+			localCharacter.RightHand.RightWrist:Destroy();
+			game.Players.LocalPlayer.Character.RightHand.Size = Vector3.new(4,4,4)
+
+		end);
+		repeat
+			wait();
+			localCharacter.LeftHand.CFrame = game.Players[TargetPlr].Character.LowerTorso.CFrame;
+			localCharacter.RightHand.CFrame = game.Players[TargetPlr].Character.LowerTorso.CFrame;
+		until game.Players[TargetPlr].Character.BodyEffects['K.O'].Value == true
+		wait(0) local A_1 = "[DaHoodPremiumTargetSystem] " .. TargetPlr .. " Has Been Successfully Eliminated!" local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "DaHoodPremiumTargetSystem [Target System]";
+			Text = "[DaHoodPremiumTargetSystem] " .. TargetPlr .. " Has been successfully knocked!";
+			Duration = 15;
+		})
+	elseif game.Players[TargetPlr].Character.BodyEffects['K.O'].Value == true then
+		wait(0) local A_1 = "[DaHoodPremiumTargetSystem] " .. TargetPlr .. " Is Already Eliminated." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "DaHoodPremiumTargetSystem [TARGET SYSTEM]";
+			Text = "[DaHoodPremiumTargetSystem] " .. TargetPlr .. " Is already knocked.";
+			Duration = 15;
+		})
+	end;
+end)
+
+UICorner_26.Parent = TargetGUI
+
+Close.Name = "Close"
+Close.Parent = CombatFrame
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.Position = UDim2.new(0.919191897, 0, 0, 0)
+Close.Size = UDim2.new(0, 39, 0, 50)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+UICorner_27.Parent = Close
+
+playername.Name = "player name"
+playername.Parent = CombatFrame
+playername.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+playername.Position = UDim2.new(0.0141414143, 0, 0.0692640692, 0)
+playername.Size = UDim2.new(0, 86, 0, 39)
+playername.Font = Enum.Font.SourceSans
+playername.Text = "player name"
+playername.TextColor3 = Color3.fromRGB(255, 255, 255)
+playername.TextScaled = true
+playername.TextSize = 14.000
+playername.TextWrapped = true
+
+
+MaskSpam.Name = "Mask Spam"
+MaskSpam.Parent = CombatFrame
+MaskSpam.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+MaskSpam.Position = UDim2.new(0.336480856, 0, 0.0275640786, 0)
+MaskSpam.Size = UDim2.new(0, 107, 0, 50)
+MaskSpam.Font = Enum.Font.SourceSans
+MaskSpam.Text = "Mask Spam"
+MaskSpam.TextColor3 = Color3.fromRGB(255, 255, 255)
+MaskSpam.TextScaled = true
+MaskSpam.TextSize = 14.000
+MaskSpam.TextWrapped = true
+MaskSpam.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Mask Spam Enabled! CRASH THIS SERVER BITCH!";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	gsPlayers = game:GetService("Players")
+	gsWorkspace = game:GetService("Workspace")
+	gsLighting = game:GetService("Lighting")
+	gsReplicatedStorage = game:GetService("ReplicatedStorage")
+	gsCoreGui = game:GetService("CoreGui")
+	gsTween = game:GetService("TweenService")
+	gsHttp = game:GetService("HttpService")
+
+	LP = gsPlayers.LocalPlayer
+	Mouse = LP:GetMouse()
+
+	LP.Character.ChildAdded:Connect(function(b)
+		wait(0)
+		if b:IsA("Accessory") then b.Handle.Mesh:Destroy()
+			b.Parent = gsWorkspace
+		end
+	end)
+end)
+
+UICorner_28.Parent = MaskSpam
+
+RagdollReset.Name = "RagdollReset"
+RagdollReset.Parent = CombatFrame
+RagdollReset.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+RagdollReset.Position = UDim2.new(0.225541726, 0, 0.420787185, 0)
+RagdollReset.Size = UDim2.new(0, 107, 0, 50)
+RagdollReset.Font = Enum.Font.SourceSans
+RagdollReset.Text = "RagdollReset"
+RagdollReset.TextColor3 = Color3.fromRGB(255, 255, 255)
+RagdollReset.TextScaled = true
+RagdollReset.TextSize = 14.000
+RagdollReset.TextWrapped = true
+RagdollReset.MouseButton1Down:connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Foruce Reseting, saving you from whatever scardy.";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	game:GetService("Players").LocalPlayer.Character.Humanoid.Name = 1
+	local l = game:GetService("Players").LocalPlayer.Character["1"]:Clone()
+	l.Parent = game:GetService("Players").LocalPlayer.Character
+	l.Name = "Humanoid"
+	wait(0.1)
+	game:GetService("Players").LocalPlayer.Character["1"]:Destroy()
+	game:GetService("Workspace").CurrentCamera.CameraSubject = game:GetService("Players").LocalPlayer.Character
+	game:GetService("Players").LocalPlayer.Character.Animate.Disabled = true
+	wait(0.1)
+	game:GetService("Players").LocalPlayer.Character.Animate.Disabled = false
+	game:GetService("Players").LocalPlayer.Character.Humanoid.DisplayDistanceType = "None"
+end)
+
+UICorner_29.Parent = RagdollReset
+
+NoSlowdown.Name = "No Slowdown"
+NoSlowdown.Parent = CombatFrame
+NoSlowdown.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+NoSlowdown.Position = UDim2.new(0.253437668, 0, 0.643222868, 0)
+NoSlowdown.Size = UDim2.new(0, 107, 0, 50)
+NoSlowdown.Font = Enum.Font.SourceSans
+NoSlowdown.Text = "No Slowdown"
+NoSlowdown.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoSlowdown.TextScaled = true
+NoSlowdown.TextSize = 14.000
+NoSlowdown.TextWrapped = true
+NoSlowdown.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "NoSlowCooldown Enabled!";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	loadstring(game:HttpGet(('https://pastebin.com/raw/9mAwN6rA'),true))()
+	game.Players.PlayerAdded:connect(function(plr)
+		for i = 1,#mains do
+			if string.lower(plr.Name) == tostring(string.lower(mains[i])) then
+				game.CoreGui.RobloxGui.PlayerListContainer.ScrollList[plr.Name].BGFrame.PlayerName.TextColor3 = Color3.new(1, 170/255, 0)
+			end
+		end
+	end)
+	for i, x in next, game:GetService"Players":GetPlayers() do
+		for i = 1,#mains do
+			if string.lower(x.Name) == tostring(string.lower(mains[i])) then
+				game.CoreGui.RobloxGui.PlayerListContainer.ScrollList[x.Name].BGFrame.PlayerName.TextColor3 = Color3.new(1, 170/255, 0)
+			end
+		end
+	end
+	game.Players.PlayerAdded:connect(function(plr)
+		for i = 1,#special do
+			if string.lower(plr.Name) == tostring(string.lower(special[i])) then
+				game.CoreGui.RobloxGui.PlayerListContainer.ScrollList[plr.Name].BGFrame.PlayerName.TextColor3 = Color3.new(0, 255, 255)
+			end
+		end
+	end)
+	for i, x in next, game:GetService"Players":GetPlayers() do
+		for i = 1,#special do
+			if string.lower(x.Name) == tostring(string.lower(special[i])) then
+				game.CoreGui.RobloxGui.PlayerListContainer.ScrollList[x.Name].BGFrame.PlayerName.TextColor3 = Color3.new(0, 255, 255)
+			end
+		end
+	end
+
+
+	game.Players.LocalPlayer.CharacterAdded:Connect(function()
+		repeat wait() until game.Players.LocalPlayer.Character
+		repeat wait() until game.Players.LocalPlayer.Character.BodyEffects
+		repeat wait() until game.Players.LocalPlayer.Character.BodyEffects.Movement
+		wait()
+		game.Players.LocalPlayer.Character.BodyEffects.Movement.ChildAdded:Connect(function(child)
+			wait()
+			child:Destroy()
+		end)
+	end)
+
+	game.Players.LocalPlayer.Character.BodyEffects.Movement.ChildAdded:Connect(function(child)
+		wait()
+		child:Destroy()
+	end)
+end)
+
+UICorner_30.Parent = NoSlowdown
+
+TextLabel_2.Parent = CombatFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+TextLabel_2.Position = UDim2.new(0.25454548, 0, 0.896321058, 0)
+TextLabel_2.Size = UDim2.new(0, 368, 0, 31)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Scripted by 6EX and draxe mostly draxe :)"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UICorner_31.Parent = TextLabel_2
+
+Aimlock.Name = "Aimlock"
+Aimlock.Parent = CombatFrame
+Aimlock.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Aimlock.Position = UDim2.new(0.511292756, 0, 0.642394245, 0)
+Aimlock.Size = UDim2.new(0, 107, 0, 50)
+Aimlock.Font = Enum.Font.SourceSans
+Aimlock.Text = "Aimlock"
+Aimlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimlock.TextScaled = true
+Aimlock.TextSize = 14.000
+Aimlock.TextWrapped = true
+Aimlock.MouseButton1Down:Connect(function()
+	--// Clone Detection
+	for i, v in pairs(game:GetService("CoreGui"):GetChildren()) do
+		if v.Name == "ScreenGui" then
+			v:Destroy()
+		end
+	end
+
+	repeat
+		wait()
+	until game:GetService("Players").LocalPlayer ~= nil
+
+	if not game:GetService("Players").LocalPlayer.Character then
+		game:GetService("Players").LocalPlayer.CharacterAdded:Wait()
+	end
+
+
+
+	--/ Variables & Da Hood Gui Clones Deletion
+
+	local LocalPlayer = game:GetService("Players").LocalPlayer
+	local Character = LocalPlayer.Character
+	local Workspace = game:GetService("Workspace")
+	local CoreGui = game:GetService("CoreGui")
+
+	local LockedPlayer = nil
+	local Aimlock = nil
+
+	for i, v in pairs(game:GetService("CoreGui"):GetChildren()) do
+		if v.Name == "dhgui" then
+			v:Destroy()
+		end
+	end
+
+	local mt = getrawmetatable(game)
+	local namecall = mt.__namecall
+	setreadonly(mt, false)
+
+	if getrawmetatable then
+		local mt = getrawmetatable(game)
+		local namecall = mt.__namecall
+		setreadonly(mt, false)
+
+		mt.__namecall = newcclosure(function(table, ...)
+			local args = {...}
+			local method = getnamecallmethod()
+			if method == "FireServer" and args[1] and args[1] == "UpdateMousePos" then
+				if not (args[3] and args[3] == "Aimlock") then
+					return nil
+				end
+			end
+			return namecall(table, ...)
+		end) 
+	end
+
+	local function FindPlrOnMouse()
+		for i, v in pairs(game.Workspace:FindPartsInRegion3(Region3.new(LocalPlayer:GetMouse().Hit.Position, LocalPlayer:GetMouse().Hit.Position))) do
+			local plr = game.Players:GetPlayerFromCharacter(v.Parent)
+			if plr ~= nil and plr ~= LocalPlayer then
+				return plr
+			end
+		end
+		return nil
+	end
+
+	-- // Gui
+	local ScreenGui = Instance.new("ScreenGui")
+	local Frame = Instance.new("Frame")
+	local TextButton = Instance.new("TextButton")
+	local TextButton_2 = Instance.new("TextButton")
+	local TextBox = Instance.new("TextBox")
+
+
+	--// Gui Making
+
+	ScreenGui.Parent = game.CoreGui
+	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	Frame.Parent = ScreenGui
+	Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Frame.Position = UDim2.new(0.30297032, 0, 0.475625843, 0)
+	Frame.Size = UDim2.new(0, 397, 0, 211)
+	Frame.Active = true
+	Frame.Draggable = true
+
+
+
+	TextButton.Parent = Frame
+	TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton.Position = UDim2.new(0.0554156154, 0, 0.60189575, 0)
+	TextButton.Size = UDim2.new(0, 136, 0, 50)
+	TextButton.Font = Enum.Font.Cartoon
+	TextButton.Text = "Aimlock Tool"
+	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton.TextSize = 14.000
+
+
+	TextButton_2.Parent = Frame
+	TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextButton_2.Position = UDim2.new(0.570553482, 0, 0.60189575, 0)
+	TextButton_2.Size = UDim2.new(0, 136, 0, 50)
+	TextButton_2.Font = Enum.Font.Cartoon
+	TextButton_2.Text = ""
+	TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextButton_2.TextSize = 14.000
+
+
+
+	TextBox.Parent = Frame
+	TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextBox.Position = UDim2.new(0.246851385, 0, 0.218009472, 0)
+	TextBox.Size = UDim2.new(0, 200, 0, 50)
+	TextBox.Font = Enum.Font.Cartoon
+	TextBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+	TextBox.Text = ""
+	TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+	TextBox.TextSize = 14.000
+
+
+	TextButton.MouseButton1Click:connect(function()
+		Aimlock = nil
+
+		for i, v in pairs(LocalPlayer.Backpack:GetChildren()) do
+			if v.ClassName == "Tool" and v.Name == "Aimlock Tool" then
+				v:Destroy() 
+			end
+		end
+		for i, v in pairs(LocalPlayer.Character:GetChildren()) do
+			if v.ClassName == "Tool" and v.Name == "Aimlock Tool" then
+				v:Destroy() 
+			elseif v.ClassName == "Tool" then
+				v.Parent = LocalPlayer.Backpack
+			end
+		end
+
+		local AimlockTool = Instance.new("Tool")
+		AimlockTool.Name = "Aimlock Tool"
+		AimlockTool.Parent = LocalPlayer.Backpack
+		AimlockTool.RequiresHandle = false
+		AimlockTool.TextureId = "rbxasset://1532350639"
+
+		AimlockTool.Activated:Connect(function()
+			local Plr = FindPlrOnMouse()
+
+			if Plr ~= nil and Plr.Character and Plr.Character:FindFirstChild("Head") and Plr.Character:FindFirstChild("UpperTorso") then
+				Aimlock = Plr 
+
+				game:GetService("StarterGui"):SetCore("SendNotification",{
+					Title = "AIMLOCK | DaHoodHubPremium";
+					Text = "Aimlocking towards: " .. Plr.Name .. ", use any gun and shoot anywhere";
+					Button1 = "Ok";
+					Duration = 2.5;
+				})
+			else
+				Aimlock = nil
+
+				game:GetService("StarterGui"):SetCore("SendNotification",{
+					Title = "AIMLOCK | Corpse";
+					Text = "No player clicked on, aimlocking towards mouse as normal";
+					Button1 = "Ok";
+					Duration = 2.5;
+				})
+			end
+		end)
+	end)
+
+	if getrawmetatable then
+		game:GetService("RunService").Heartbeat:Connect(function()
+			if Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChild("Head") then
+				game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character.Head.Position, "Aimlock")
+			elseif Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChildOfClass("Part") then
+				game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character:FindFirstChildOfClass("Part").Position, "Aimlock")
+			elseif Aimlock == nil then
+				game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", game:GetService("Players").LocalPlayer:GetMouse().Hit.Position, "Aimlock")
+			end
+		end)
+	else
+		for i = 1, 10 do
+			game:GetService("RunService").Heartbeat:Connect(function()
+				if Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChild("Head") then
+					game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character.Head.Position)
+				elseif Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChildOfClass("Part") then
+					game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character:FindFirstChildOfClass("Part").Position)
+				end
+			end)
+			game:GetService("RunService").RenderStepped:Connect(function()
+				if Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChild("Head") then
+					game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character.Head.Position)
+				elseif Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChildOfClass("Part") then
+					game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character:FindFirstChildOfClass("Part").Position)
+				end
+			end)
+			game:GetService("RunService").Stepped:Connect(function()
+				if Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChild("Head") then
+					game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character.Head.Position)
+				elseif Aimlock ~= nil and Aimlock.Character and Aimlock.Character:FindFirstChildOfClass("Part") then
+					game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", Aimlock.Character:FindFirstChildOfClass("Part").Position)
+				end
+			end)
+		end
+	end
+end)
+
+UICorner_32.Parent = Aimlock
+
+Aimlock_2.Name = "Aimlock"
+Aimlock_2.Parent = CombatFrame
+Aimlock_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Aimlock_2.Position = UDim2.new(0.774348855, 0, 0.642394245, 0)
+Aimlock_2.Size = UDim2.new(0, 107, 0, 50)
+Aimlock_2.Font = Enum.Font.SourceSans
+Aimlock_2.Text = "Anti-Stomp"
+Aimlock_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aimlock_2.TextScaled = true
+Aimlock_2.TextSize = 14.000
+Aimlock_2.TextWrapped = true
+Aimlock_2.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "Anit-Stomp Enabled!";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	pcall(function() if tostring(game.PlaceId) == "2788229376" then local corepackages = game:GetService"CorePackages" local localplayer = game:GetService"Players".LocalPlayer local run = game:GetService"RunService" run:BindToRenderStep("rrrrrrrrrrr",2000,function() pcall(function() if localplayer.Character.Humanoid.Health <= 30 then localplayer.Character.Humanoid:UnequipTools() localplayer.Character.Humanoid:Destroy() workspace.CurrentCamera.CameraSubject = localplayer.Character wait() local prt = Instance.new("Model", corepackages); Instance.new("Part", prt).Name="Torso"; Instance.new("Part", prt).Name="Head"; Instance.new("Humanoid", prt).Name="Humanoid"; localplayer.Character=prt end end) pcall(function() if localplayer.Character.Humanoid.FloorMaterial == "Plastic" then ReplicatedStorage:FireServer("Stomp") end end) end) loadstring(game:HttpGet("https://pastebin.com/raw/MQ3wc7Zq", true))() end end)
+end)
+
+UICorner_33.Parent = Aimlock_2
+
+MiscFrame.Name = "MiscFrame"
+MiscFrame.Parent = DaHoodHubPremium_2
+MiscFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+MiscFrame.Size = UDim2.new(0, 516, 0, 332)
+MiscFrame.Visible = false
+
+MiscFrame_2.Name = "MiscFrame"
+MiscFrame_2.Parent = MiscFrame
+
+Uimakercredit.Name = "Ui maker credit"
+Uimakercredit.Parent = MiscFrame
+Uimakercredit.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Uimakercredit.Position = UDim2.new(0.0202020202, 0, 0.0444768965, 0)
+Uimakercredit.Size = UDim2.new(0, 463, 0, 63)
+Uimakercredit.Font = Enum.Font.SourceSans
+Uimakercredit.Text = "Ui Maker: draxe#1000"
+Uimakercredit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Uimakercredit.TextScaled = true
+Uimakercredit.TextSize = 14.000
+Uimakercredit.TextWrapped = true
+
+MiscFrame_3.Name = "MiscFrame"
+MiscFrame_3.Parent = Uimakercredit
+
+ScriptCredit.Name = "Script Credit"
+ScriptCredit.Parent = MiscFrame
+ScriptCredit.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ScriptCredit.Position = UDim2.new(0.0323232338, 0, 0.454733312, 0)
+ScriptCredit.Size = UDim2.new(0, 461, 0, 53)
+ScriptCredit.Font = Enum.Font.SourceSans
+ScriptCredit.Text = "Scripted: draxe#1000 | 6EX#6666"
+ScriptCredit.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptCredit.TextScaled = true
+ScriptCredit.TextSize = 14.000
+ScriptCredit.TextWrapped = true
+
+MiscFrame_4.Name = "MiscFrame"
+MiscFrame_4.Parent = ScriptCredit
+
+Ad.Name = "Ad"
+Ad.Parent = MiscFrame
+Ad.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Ad.Position = UDim2.new(0.0202020202, 0, 0.684684694, 0)
+Ad.Size = UDim2.new(0, 461, 0, 65)
+Ad.Font = Enum.Font.SourceSans
+Ad.Text = ""
+Ad.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ad.TextScaled = true
+Ad.TextSize = 14.000
+Ad.TextWrapped = true
+
+MiscFrame_5.Name = "MiscFrame"
+MiscFrame_5.Parent = Ad
+
+close.Name = "close"
+close.Parent = MiscFrame
+close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+close.Position = UDim2.new(0.951515198, 0, 0, 0)
+close.Size = UDim2.new(0, 24, 0, 27)
+close.Font = Enum.Font.SourceSans
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextScaled = true
+close.TextSize = 14.000
+close.TextWrapped = true
+
+UICorner_34.Parent = close
+
+ScriptCredit_2.Name = "Script Credit"
+ScriptCredit_2.Parent = MiscFrame
+ScriptCredit_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ScriptCredit_2.Position = UDim2.new(0, 0, 0.789181471, 0)
+ScriptCredit_2.Size = UDim2.new(0, 461, 0, 53)
+ScriptCredit_2.Font = Enum.Font.SourceSans
+ScriptCredit_2.Text = "Teamup came :) revamp coming soon, more fetures tooo soon. Your gonna love this gui before we are done. This aint it teleports and more are coming out. THANKS FOR BUYING IT 450 ROBUX SPEAD THE WORD PUSSYS!!!!!!!"
+ScriptCredit_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptCredit_2.TextScaled = true
+ScriptCredit_2.TextSize = 14.000
+ScriptCredit_2.TextWrapped = true
+
+MiscFrame_6.Name = "MiscFrame"
+MiscFrame_6.Parent = ScriptCredit_2
+
+UICorner_35.Parent = DaHoodHubPremium_2
+
+MovemantFrame.Name = "MovemantFrame"
+MovemantFrame.Parent = DaHoodHubPremium_2
+MovemantFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+MovemantFrame.Size = UDim2.new(0, 516, 0, 332)
+MovemantFrame.Visible = false
+
+UICorner_36.Parent = MovemantFrame
+
+JumpPower.Name = "JumpPower"
+JumpPower.Parent = MovemantFrame
+JumpPower.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+JumpPower.Position = UDim2.new(0.458585888, 0, 0.546666682, 0)
+JumpPower.Size = UDim2.new(0, 200, 0, 50)
+JumpPower.Font = Enum.Font.SourceSans
+JumpPower.Text = "JumpPower"
+JumpPower.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpPower.TextScaled = true
+JumpPower.TextSize = 14.000
+JumpPower.TextWrapped = true
+JumpPower.MouseButton1Down:Connect(function()
+	game:GetService('Players').LocalPlayer.Character.Humanoid.JumpPower = 350
+end)
+
+UICorner_37.Parent = JumpPower
+
+Walkspeed.Name = "Walkspeed"
+Walkspeed.Parent = MovemantFrame
+Walkspeed.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Walkspeed.Position = UDim2.new(0.458585888, 0, 0.243333325, 0)
+Walkspeed.Size = UDim2.new(0, 200, 0, 50)
+Walkspeed.Font = Enum.Font.SourceSans
+Walkspeed.Text = "Walkspeed"
+Walkspeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Walkspeed.TextScaled = true
+Walkspeed.TextSize = 14.000
+Walkspeed.TextWrapped = true
+Walkspeed.MouseButton1Down:Connect(function()
+	local walkspeedenabled = false
+
+	function x_walkspeed(key)
+		if (key == "x") then
+			if walkspeedenabled == false then
+				_G.WS = 200;
+				local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+				Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+					Humanoid.WalkSpeed = _G.WS;
+				end)
+				Humanoid.WalkSpeed = _G.WS;
+
+				walkspeedenabled = true
+			elseif walkspeedenabled == true then
+				_G.WS = 20;
+				local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+				Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+					Humanoid.WalkSpeed = _G.WS;
+				end)
+				Humanoid.WalkSpeed = _G.WS;
+
+				walkspeedenabled = false
+			end
+		end
+	end
+
+	walkspeedmouse.KeyDown:connect(x_walkspeed)
+end)
+
+UICorner_38.Parent = Walkspeed
+
+AnmationChanger.Name = "AnmationChanger"
+AnmationChanger.Parent = MovemantFrame
+AnmationChanger.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AnmationChanger.Position = UDim2.new(0.458585888, 0, 0.0400000066, 0)
+AnmationChanger.Size = UDim2.new(0, 200, 0, 50)
+AnmationChanger.Font = Enum.Font.SourceSans
+AnmationChanger.Text = "Anmation Chnager"
+AnmationChanger.TextColor3 = Color3.fromRGB(255, 255, 255)
+AnmationChanger.TextScaled = true
+AnmationChanger.TextSize = 14.000
+AnmationChanger.TextWrapped = true
+AnmationChanger.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "AnmationChanger Opened!";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	local AnimationChanger = Instance.new("ScreenGui")
+	local Main = Instance.new("Frame")
+	local TopBar = Instance.new("Frame")
+	local Close = Instance.new("TextButton")
+	local TextLabel = Instance.new("TextLabel")
+	local TextLabel_2 = Instance.new("TextLabel")
+	local NormalTab = Instance.new("Frame")
+	local A_Astronaut = Instance.new("TextButton")
+	local A_Bubbly = Instance.new("TextButton")
+	local A_Cartoony = Instance.new("TextButton")
+	local A_Elder = Instance.new("TextButton")
+	local A_Knight = Instance.new("TextButton")
+	local A_Levitation = Instance.new("TextButton")
+	local A_Mage = Instance.new("TextButton")
+	local A_Ninja = Instance.new("TextButton")
+	local A_Pirate = Instance.new("TextButton")
+	local A_Robot = Instance.new("TextButton")
+	local A_Stylish = Instance.new("TextButton")
+	local A_SuperHero = Instance.new("TextButton")
+	local A_Toy = Instance.new("TextButton")
+	local A_Vampire = Instance.new("TextButton")
+	local A_Werewolf = Instance.new("TextButton")
+	local A_Zombie = Instance.new("TextButton")
+	local Category = Instance.new("TextLabel")
+	local SpecialTab = Instance.new("Frame")
+	local A_Patrol = Instance.new("TextButton")
+	local A_Confident = Instance.new("TextButton")
+	local A_Popstar = Instance.new("TextButton")
+	local A_Cowboy = Instance.new("TextButton")
+	local A_Ghost = Instance.new("TextButton")
+	local A_Sneaky = Instance.new("TextButton")
+	local A_Princess = Instance.new("TextButton")
+	local Category_2 = Instance.new("TextLabel")
+	local OtherTab = Instance.new("Frame")
+	local Category_3 = Instance.new("TextLabel")
+	local A_None = Instance.new("TextButton")
+	local A_Anthro = Instance.new("TextButton")
+	local Animate = game.Players.LocalPlayer.Character.Animate
+
+	AnimationChanger.Name = "AnimationChanger"
+	AnimationChanger.Parent = game:WaitForChild("CoreGui")
+	AnimationChanger.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+	Main.Name = "Main"
+	Main.Parent = AnimationChanger
+	Main.BackgroundColor3 = Color3.new(0.278431, 0.278431, 0.278431)
+	Main.BorderSizePixel = 0
+	Main.Position = UDim2.new(0.421999991, 0, -1, 0)
+	Main.Size = UDim2.new(0, 300, 0, 250)
+	Main.Active = true
+	Main.Draggable = true
+
+	TopBar.Name = "TopBar"
+	TopBar.Parent = Main
+	TopBar.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	TopBar.BorderSizePixel = 0
+	TopBar.Size = UDim2.new(0, 300, 0, 30)
+
+	Close.Name = "Close"
+	Close.Parent = TopBar
+	Close.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	Close.BorderSizePixel = 0
+	Close.Position = UDim2.new(0.899999976, 0, 0, 0)
+	Close.Size = UDim2.new(0, 30, 0, 30)
+	Close.Font = Enum.Font.SciFi
+	Close.Text = "x"
+	Close.TextColor3 = Color3.new(1, 0, 0.0156863)
+	Close.TextSize = 20
+	Close.MouseButton1Click:Connect(function()
+		wait(0.3)
+		Main:TweenPosition(UDim2.new(0.421999991, 0, -1.28400004, 0))
+		wait(3)
+		AnimationChanger:Destroy()
+	end)
+
+	TextLabel.Parent = TopBar
+	TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextLabel.BackgroundTransparency = 1
+	TextLabel.BorderSizePixel = 0
+	TextLabel.Position = UDim2.new(0, 0, 0.600000024, 0)
+	TextLabel.Size = UDim2.new(0, 270, 0, 10)
+	TextLabel.Font = Enum.Font.SourceSans
+	TextLabel.Text = "Made by Nyser#4623"
+	TextLabel.TextColor3 = Color3.new(1, 1, 1)
+	TextLabel.TextSize = 15
+
+	TextLabel_2.Parent = TopBar
+	TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+	TextLabel_2.BackgroundTransparency = 1
+	TextLabel_2.BorderSizePixel = 0
+	TextLabel_2.Position = UDim2.new(0, 0, -0.0266667679, 0)
+	TextLabel_2.Size = UDim2.new(0, 270, 0, 20)
+	TextLabel_2.Font = Enum.Font.SourceSans
+	TextLabel_2.Text = "Animation Changer"
+	TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+	TextLabel_2.TextSize = 20
+
+	NormalTab.Name = "NormalTab"
+	NormalTab.Parent = Main
+	NormalTab.BackgroundColor3 = Color3.new(0.278431, 0.278431, 0.278431)
+	NormalTab.BackgroundTransparency = 1
+	NormalTab.BorderSizePixel = 0
+	NormalTab.Position = UDim2.new(0.5, 0, 0.119999997, 0)
+	NormalTab.Size = UDim2.new(0, 150, 0, 500)
+
+	A_Astronaut.Name = "A_Astronaut"
+	A_Astronaut.Parent = NormalTab
+	A_Astronaut.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Astronaut.BorderSizePixel = 0
+	A_Astronaut.Position = UDim2.new(0, 0, 0.815764725, 0)
+	A_Astronaut.Size = UDim2.new(0, 150, 0, 30)
+	A_Astronaut.Font = Enum.Font.SciFi
+	A_Astronaut.Text = "Astronaut"
+	A_Astronaut.TextColor3 = Color3.new(1, 1, 1)
+	A_Astronaut.TextSize = 20
+	A_Astronaut.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=891621366"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=891633237"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=891667138"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=891636393"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=891627522"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=891609353"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=891617961"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Bubbly.Name = "A_Bubbly"
+	A_Bubbly.Parent = NormalTab
+	A_Bubbly.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Bubbly.BorderSizePixel = 0
+	A_Bubbly.Position = UDim2.new(0, 0, 0.349019617, 0)
+	A_Bubbly.Size = UDim2.new(0, 150, 0, 30)
+	A_Bubbly.Font = Enum.Font.SciFi
+	A_Bubbly.Text = "Bubbly"
+	A_Bubbly.TextColor3 = Color3.new(1, 1, 1)
+	A_Bubbly.TextSize = 20
+	A_Bubbly.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=910004836"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=910009958"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=910034870"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=910025107"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=910016857"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=910001910"
+		Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=910030921"
+		Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=910028158"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Cartoony.Name = "A_Cartoony"
+	A_Cartoony.Parent = NormalTab
+	A_Cartoony.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Cartoony.BorderSizePixel = 0
+	A_Cartoony.Position = UDim2.new(0, 0, 0.407272667, 0)
+	A_Cartoony.Size = UDim2.new(0, 150, 0, 30)
+	A_Cartoony.Font = Enum.Font.SciFi
+	A_Cartoony.Text = "Cartoony"
+	A_Cartoony.TextColor3 = Color3.new(1, 1, 1)
+	A_Cartoony.TextSize = 20
+	A_Cartoony.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=742637544"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=742638445"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=742640026"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=742638842"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=742637942"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=742636889"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=742637151"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Elder.Name = "A_Elder"
+	A_Elder.Parent = NormalTab
+	A_Elder.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Elder.BorderSizePixel = 0
+	A_Elder.Position = UDim2.new(6.51925802e-09, 0, 0.636310041, 0)
+	A_Elder.Size = UDim2.new(0, 150, 0, 30)
+	A_Elder.Font = Enum.Font.SciFi
+	A_Elder.Text = "Elder"
+	A_Elder.TextColor3 = Color3.new(1, 1, 1)
+	A_Elder.TextSize = 20
+	A_Elder.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=845397899"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=845400520"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=845403856"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=845386501"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=845398858"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=845392038"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=845396048"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Knight.Name = "A_Knight"
+	A_Knight.Parent = NormalTab
+	A_Knight.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Knight.BorderSizePixel = 0
+	A_Knight.Position = UDim2.new(0, 0, 0.52352941, 0)
+	A_Knight.Size = UDim2.new(0, 150, 0, 30)
+	A_Knight.Font = Enum.Font.SciFi
+	A_Knight.Text = "Knight"
+	A_Knight.TextColor3 = Color3.new(1, 1, 1)
+	A_Knight.TextSize = 20
+	A_Knight.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=657595757"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=657568135"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=657552124"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=657564596"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=658409194"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=658360781"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=657600338"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Levitation.Name = "A_Levitation"
+	A_Levitation.Parent = NormalTab
+	A_Levitation.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Levitation.BorderSizePixel = 0
+	A_Levitation.Position = UDim2.new(0, 0, 0.115472436, 0)
+	A_Levitation.Size = UDim2.new(0, 150, 0, 30)
+	A_Levitation.Font = Enum.Font.SciFi
+	A_Levitation.Text = "Levitation"
+	A_Levitation.TextColor3 = Color3.new(1, 1, 1)
+	A_Levitation.TextSize = 20
+	A_Levitation.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616006778"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616008087"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616010382"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616008936"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616003713"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616005863"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Mage.Name = "A_Mage"
+	A_Mage.Parent = NormalTab
+	A_Mage.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Mage.BorderSizePixel = 0
+	A_Mage.Position = UDim2.new(0, 0, 0.696203232, 0)
+	A_Mage.Size = UDim2.new(0, 150, 0, 30)
+	A_Mage.Font = Enum.Font.SciFi
+	A_Mage.Text = "Mage"
+	A_Mage.TextColor3 = Color3.new(1, 1, 1)
+	A_Mage.TextSize = 20
+	A_Mage.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=707742142"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=707855907"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=707897309"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=707861613"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=707853694"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=707826056"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=707829716"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Ninja.Name = "A_Ninja"
+	A_Ninja.Parent = NormalTab
+	A_Ninja.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Ninja.BorderSizePixel = 0
+	A_Ninja.Position = UDim2.new(0, 0, 0.0597896464, 0)
+	A_Ninja.Size = UDim2.new(0, 150, 0, 30)
+	A_Ninja.Font = Enum.Font.SciFi
+	A_Ninja.Text = "Ninja"
+	A_Ninja.TextColor3 = Color3.new(1, 1, 1)
+	A_Ninja.TextSize = 20
+	A_Ninja.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=656117400"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=656118341"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=656114359"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Pirate.Name = "A_Pirate"
+	A_Pirate.Parent = NormalTab
+	A_Pirate.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Pirate.BorderSizePixel = 0
+	A_Pirate.Position = UDim2.new(-0.000333309174, 0, 0.874588311, 0)
+	A_Pirate.Size = UDim2.new(0, 150, 0, 30)
+	A_Pirate.Font = Enum.Font.SciFi
+	A_Pirate.Text = "Pirate"
+	A_Pirate.TextColor3 = Color3.new(1, 1, 1)
+	A_Pirate.TextSize = 20
+	A_Pirate.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=750781874"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=750782770"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=750785693"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=750783738"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=750782230"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=750779899"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=750780242"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Robot.Name = "A_Robot"
+	A_Robot.Parent = NormalTab
+	A_Robot.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Robot.BorderSizePixel = 0
+	A_Robot.Position = UDim2.new(0, 0, 0.291479498, 0)
+	A_Robot.Size = UDim2.new(0, 150, 0, 30)
+	A_Robot.Font = Enum.Font.SciFi
+	A_Robot.Text = "Robot"
+	A_Robot.TextColor3 = Color3.new(1, 1, 1)
+	A_Robot.TextSize = 20
+	A_Robot.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616088211"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616089559"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616095330"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616091570"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616090535"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616086039"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616087089"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Stylish.Name = "A_Stylish"
+	A_Stylish.Parent = NormalTab
+	A_Stylish.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Stylish.BorderSizePixel = 0
+	A_Stylish.Position = UDim2.new(0, 0, 0.232816339, 0)
+	A_Stylish.Size = UDim2.new(0, 150, 0, 30)
+	A_Stylish.Font = Enum.Font.SciFi
+	A_Stylish.Text = "Stylish"
+	A_Stylish.TextColor3 = Color3.new(1, 1, 1)
+	A_Stylish.TextSize = 20
+	A_Stylish.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616136790"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616138447"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616146177"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616140816"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616139451"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616133594"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616134815"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_SuperHero.Name = "A_SuperHero"
+	A_SuperHero.Parent = NormalTab
+	A_SuperHero.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_SuperHero.BorderSizePixel = 0
+	A_SuperHero.Position = UDim2.new(0, 0, 0.464919746, 0)
+	A_SuperHero.Size = UDim2.new(0, 150, 0, 30)
+	A_SuperHero.Font = Enum.Font.SciFi
+	A_SuperHero.Text = "SuperHero"
+	A_SuperHero.TextColor3 = Color3.new(1, 1, 1)
+	A_SuperHero.TextSize = 20
+	A_SuperHero.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616111295"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616113536"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616122287"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616117076"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616115533"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616104706"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616108001"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Toy.Name = "A_Toy"
+	A_Toy.Parent = NormalTab
+	A_Toy.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Toy.BorderSizePixel = 0
+	A_Toy.Position = UDim2.new(6.51925802e-09, 0, 0.756028414, 0)
+	A_Toy.Size = UDim2.new(0, 150, 0, 30)
+	A_Toy.Font = Enum.Font.SciFi
+	A_Toy.Text = "Toy"
+	A_Toy.TextColor3 = Color3.new(1, 1, 1)
+	A_Toy.TextSize = 20
+	A_Toy.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=782841498"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=782845736"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=782843345"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=782842708"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=782847020"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=782843869"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=782846423"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Vampire.Name = "A_Vampire"
+	A_Vampire.Parent = NormalTab
+	A_Vampire.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Vampire.BorderSizePixel = 0
+	A_Vampire.Position = UDim2.new(0, 0, 0.934021354, 0)
+	A_Vampire.Size = UDim2.new(0, 150, 0, 30)
+	A_Vampire.Font = Enum.Font.SciFi
+	A_Vampire.Text = "Vampire"
+	A_Vampire.TextColor3 = Color3.new(1, 1, 1)
+	A_Vampire.TextSize = 20
+	A_Vampire.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083445855"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083450166"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083473930"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083462077"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083455352"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083439238"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083443587"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Werewolf.Name = "A_Werewolf"
+	A_Werewolf.Parent = NormalTab
+	A_Werewolf.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Werewolf.BorderSizePixel = 0
+	A_Werewolf.Position = UDim2.new(-0.000333368778, 0, 0.174509808, 0)
+	A_Werewolf.Size = UDim2.new(0, 150, 0, 30)
+	A_Werewolf.Font = Enum.Font.SciFi
+	A_Werewolf.Text = "Werewolf"
+	A_Werewolf.TextColor3 = Color3.new(1, 1, 1)
+	A_Werewolf.TextSize = 20
+	A_Werewolf.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083195517"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083214717"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083178339"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083216690"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083218792"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083182000"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083189019"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Zombie.Name = "A_Zombie"
+	A_Zombie.Parent = NormalTab
+	A_Zombie.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Zombie.BorderSizePixel = 0
+	A_Zombie.Position = UDim2.new(-1.1920929e-07, 0, 0.582352936, 0)
+	A_Zombie.Size = UDim2.new(0, 150, 0, 30)
+	A_Zombie.Font = Enum.Font.SciFi
+	A_Zombie.Text = "Zombie"
+	A_Zombie.TextColor3 = Color3.new(1, 1, 1)
+	A_Zombie.TextSize = 20
+	A_Zombie.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616158929"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616160636"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616161997"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616157476"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	Category.Name = "Category"
+	Category.Parent = NormalTab
+	Category.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+	Category.BorderSizePixel = 0
+	Category.Size = UDim2.new(0, 150, 0, 30)
+	Category.Text = "Normal"
+	Category.TextColor3 = Color3.new(0, 0.835294, 1)
+	Category.TextSize = 14
+
+	SpecialTab.Name = "SpecialTab"
+	SpecialTab.Parent = Main
+	SpecialTab.BackgroundColor3 = Color3.new(0.278431, 0.278431, 0.278431)
+	SpecialTab.BackgroundTransparency = 1
+	SpecialTab.BorderSizePixel = 0
+	SpecialTab.Position = UDim2.new(0, 0, 0.119999997, 0)
+	SpecialTab.Size = UDim2.new(0, 150, 0, 230)
+
+	A_Patrol.Name = "A_Patrol"
+	A_Patrol.Parent = SpecialTab
+	A_Patrol.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Patrol.BorderSizePixel = 0
+	A_Patrol.Position = UDim2.new(0, 0, 0.259960413, 0)
+	A_Patrol.Size = UDim2.new(0, 150, 0, 30)
+	A_Patrol.Font = Enum.Font.SciFi
+	A_Patrol.Text = "Patrol"
+	A_Patrol.TextColor3 = Color3.new(1, 1, 1)
+	A_Patrol.TextSize = 20
+	A_Patrol.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1149612882"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1150842221"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1151231493"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1150967949"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1148811837"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1148811837"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1148863382"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Confident.Name = "A_Confident"
+	A_Confident.Parent = SpecialTab
+	A_Confident.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Confident.BorderSizePixel = 0
+	A_Confident.Position = UDim2.new(0, 0, 0.389248967, 0)
+	A_Confident.Size = UDim2.new(0, 150, 0, 30)
+	A_Confident.Font = Enum.Font.SciFi
+	A_Confident.Text = "Confident"
+	A_Confident.TextColor3 = Color3.new(1, 1, 1)
+	A_Confident.TextSize = 20
+	A_Confident.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1069977950"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1069987858"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1070017263"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1070001516"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1069984524"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1069946257"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1069973677"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Popstar.Name = "A_Popstar"
+	A_Popstar.Parent = SpecialTab
+	A_Popstar.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Popstar.BorderSizePixel = 0
+	A_Popstar.Position = UDim2.new(0, 0, 0.130671918, 0)
+	A_Popstar.Size = UDim2.new(0, 150, 0, 30)
+	A_Popstar.Font = Enum.Font.SciFi
+	A_Popstar.Text = "Popstar"
+	A_Popstar.TextColor3 = Color3.new(1, 1, 1)
+	A_Popstar.TextSize = 20
+	A_Popstar.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1212900985"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1150842221"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1212980338"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1212980348"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1212954642"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1213044953"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1212900995"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Cowboy.Name = "A_Cowboy"
+	A_Cowboy.Parent = SpecialTab
+	A_Cowboy.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Cowboy.BorderSizePixel = 0
+	A_Cowboy.Position = UDim2.new(0, 0, 0.772964239, 0)
+	A_Cowboy.Size = UDim2.new(0, 150, 0, 30)
+	A_Cowboy.Font = Enum.Font.SciFi
+	A_Cowboy.Text = "Cowboy"
+	A_Cowboy.TextColor3 = Color3.new(1, 1, 1)
+	A_Cowboy.TextSize = 20
+	A_Cowboy.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1014390418"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1014398616"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1014421541"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1014401683"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1014394726"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1014380606"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1014384571"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Ghost.Name = "A_Ghost"
+	A_Ghost.Parent = SpecialTab
+	A_Ghost.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Ghost.BorderSizePixel = 0
+	A_Ghost.Position = UDim2.new(0, 0, 0.900632322, 0)
+	A_Ghost.Size = UDim2.new(0, 150, 0, 30)
+	A_Ghost.Font = Enum.Font.SciFi
+	A_Ghost.Text = "Ghost"
+	A_Ghost.TextColor3 = Color3.new(1, 1, 1)
+	A_Ghost.TextSize = 20
+	A_Ghost.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616006778"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616008087"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616008936"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616005863"
+		Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=616012453"
+		Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=616011509"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Sneaky.Name = "A_Sneaky"
+	A_Sneaky.Parent = SpecialTab
+	A_Sneaky.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Sneaky.BorderSizePixel = 0
+	A_Sneaky.Position = UDim2.new(0, 0, 0.517628431, 0)
+	A_Sneaky.Size = UDim2.new(0, 150, 0, 30)
+	A_Sneaky.Font = Enum.Font.SciFi
+	A_Sneaky.Text = "Sneaky"
+	A_Sneaky.TextColor3 = Color3.new(1, 1, 1)
+	A_Sneaky.TextSize = 20
+	A_Sneaky.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1132473842"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1132477671"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1132510133"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1132494274"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1132489853"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1132461372"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1132469004"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Princess.Name = "A_Princess"
+	A_Princess.Parent = SpecialTab
+	A_Princess.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Princess.BorderSizePixel = 0
+	A_Princess.Position = UDim2.new(0, 0, 0.645296335, 0)
+	A_Princess.Size = UDim2.new(0, 150, 0, 30)
+	A_Princess.Font = Enum.Font.SciFi
+	A_Princess.Text = "Princess"
+	A_Princess.TextColor3 = Color3.new(1, 1, 1)
+	A_Princess.TextSize = 20
+	A_Princess.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=941003647"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=941013098"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=941028902"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=941015281"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=941008832"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=940996062"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=941000007"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	Category_2.Name = "Category"
+	Category_2.Parent = SpecialTab
+	Category_2.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+	Category_2.BorderSizePixel = 0
+	Category_2.Size = UDim2.new(0, 150, 0, 30)
+	Category_2.Text = "Special"
+	Category_2.TextColor3 = Color3.new(0, 0.835294, 1)
+	Category_2.TextSize = 14
+
+	OtherTab.Name = "OtherTab"
+	OtherTab.Parent = Main
+	OtherTab.BackgroundColor3 = Color3.new(0.278431, 0.278431, 0.278431)
+	OtherTab.BackgroundTransparency = 1
+	OtherTab.BorderSizePixel = 0
+	OtherTab.Position = UDim2.new(0, 0, 1.06800008, 0)
+	OtherTab.Size = UDim2.new(0, 150, 0, 220)
+
+	Category_3.Name = "Category"
+	Category_3.Parent = OtherTab
+	Category_3.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+	Category_3.BorderSizePixel = 0
+	Category_3.Size = UDim2.new(0, 150, 0, 30)
+	Category_3.Text = "Other"
+	Category_3.TextColor3 = Color3.new(0, 0.835294, 1)
+	Category_3.TextSize = 14
+
+	A_None.Name = "A_None"
+	A_None.Parent = OtherTab
+	A_None.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_None.BorderSizePixel = 0
+	A_None.Position = UDim2.new(0, 0, 0.134545445, 0)
+	A_None.Size = UDim2.new(0, 150, 0, 30)
+	A_None.Font = Enum.Font.SciFi
+	A_None.Text = "None"
+	A_None.TextColor3 = Color3.new(1, 1, 1)
+	A_None.TextSize = 20
+	A_None.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=0"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=0"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+		Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=0"
+		Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=0"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	A_Anthro.Name = "A_Anthro"
+	A_Anthro.Parent = OtherTab
+	A_Anthro.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+	A_Anthro.BorderSizePixel = 0
+	A_Anthro.Position = UDim2.new(0, 0, 0.269090891, 0)
+	A_Anthro.Size = UDim2.new(0, 150, 0, 30)
+	A_Anthro.Font = Enum.Font.SciFi
+	A_Anthro.Text = "Anthro (Default)"
+	A_Anthro.TextColor3 = Color3.new(1, 1, 1)
+	A_Anthro.TextSize = 20
+	A_Anthro.MouseButton1Click:Connect(function()
+		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=2510196951"
+		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=2510197257"
+		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=2510202577"
+		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=2510198475"
+		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=2510197830"
+		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=2510192778"
+		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=2510195892"
+		game.Players.LocalPlayer.Character.Humanoid.Jump = true
+	end)
+
+	wait(1)
+	Main:TweenPosition(UDim2.new(0.421999991, 0, 0.28400004, 0))
+end)
+
+UICorner_39.Parent = AnmationChanger
+
+InfYeled.Name = "Inf Yeled"
+InfYeled.Parent = MovemantFrame
+InfYeled.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+InfYeled.Position = UDim2.new(1.49011612e-08, 0, 0.0400000066, 0)
+InfYeled.Size = UDim2.new(0, 200, 0, 50)
+InfYeled.Font = Enum.Font.SourceSans
+InfYeled.Text = "Inf Yled [Dont Use Fly =  Ban]"
+InfYeled.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfYeled.TextScaled = true
+InfYeled.TextSize = 14.000
+InfYeled.TextWrapped = true
+InfYeled.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "[DaHoodHubP]";
+		Text = "IY opened, dont use fly or you will be banned.";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+	local AnnGUI = Instance.new("Frame")
+	local background = Instance.new("Frame")
+	local TextBox = Instance.new("TextLabel")
+	local shadow = Instance.new("Frame")
+	local PopupText = Instance.new("TextLabel")
+	local Exit = Instance.new("ImageButton")
+
+	screenGui = Instance.new("ScreenGui",game.CoreGui)
+
+	AnnGUI.Name = 'Boomer'
+	AnnGUI.Parent = screenGui
+	AnnGUI.Active = true
+	AnnGUI.BackgroundTransparency = 1
+	AnnGUI.Position = UDim2.new(0.5, -180, 0, -400)
+	AnnGUI.Size = UDim2.new(0, 360, 0, 20)
+	AnnGUI.ZIndex = 4
+
+	background.Name = "background"
+	background.Parent = AnnGUI
+	background.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
+	background.BorderSizePixel = 0
+	background.Position = UDim2.new(0, 0, 0, 20)
+	background.Size = UDim2.new(0, 360, 0, 135)
+
+	TextBox.Parent = background
+	TextBox.BackgroundTransparency = 1
+	TextBox.Position = UDim2.new(0.017, 0, 0.06, 0)
+	TextBox.Size = UDim2.new(0, 348, 0, 120)
+	TextBox.Font = Enum.Font.SourceSans
+	TextBox.TextSize = 18
+	TextBox.TextWrapped = true
+	TextBox.Text = 'Please use the new Infinite Yield loadstring. You can find it in the Discord.\n\ndiscord.io/infiniteyield\n\nYou will now be re-directed to the new loadstring.'
+	TextBox.TextColor3 = Color3.new(1, 1, 1)
+	TextBox.TextXAlignment = Enum.TextXAlignment.Left
+	TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+	shadow.Name = "shadow"
+	shadow.Parent = AnnGUI
+	shadow.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
+	shadow.BorderSizePixel = 0
+	shadow.Size = UDim2.new(0, 360, 0, 20)
+	shadow.ZIndex = 4
+
+	PopupText.Name = "PopupText"
+	PopupText.Parent = shadow
+	PopupText.BackgroundTransparency = 1
+	PopupText.Position = UDim2.new(0, 51, 0, 0)
+	PopupText.Size = UDim2.new(0.76, -16, 0.95, 0)
+	PopupText.ZIndex = 4
+	PopupText.Font = Enum.Font.SourceSans
+	PopupText.TextSize = 14
+	PopupText.Text = "Server Announcement"
+	PopupText.TextColor3 = Color3.new(1, 1, 1)
+	PopupText.TextWrapped = true
+
+	Exit.Name = "Exit"
+	Exit.Parent = shadow
+	Exit.BackgroundTransparency = 1
+	Exit.Size = UDim2.new(0, 20, 0, 20)
+	Exit.ZIndex = 4
+	Exit.Image = "rbxassetid://2132544126"
+
+	wait(1)
+	AnnGUI:TweenPosition(UDim2.new(0.5, -180, 0, 150), "InOut", "Quart", 0.5, true, nil)
+
+	Exit.MouseButton1Click:Connect(function()
+		AnnGUI:TweenPosition(UDim2.new(0.5, -180, 0, -400), "InOut", "Quart", 0.5, true, nil)
+		wait(0.6)
+		AnnGUI:Destroy()
+	end)
+
+	wait(5)
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+UICorner_40.Parent = InfYeled
+
+NoJumpCooldown.Name = "NoJumpCooldown"
+NoJumpCooldown.Parent = MovemantFrame
+NoJumpCooldown.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+NoJumpCooldown.Position = UDim2.new(1.49011612e-08, 0, 0.273333311, 0)
+NoJumpCooldown.Size = UDim2.new(0, 200, 0, 50)
+NoJumpCooldown.Font = Enum.Font.SourceSans
+NoJumpCooldown.Text = "NoJumpCooldown"
+NoJumpCooldown.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoJumpCooldown.TextScaled = true
+NoJumpCooldown.TextSize = 14.000
+NoJumpCooldown.TextWrapped = true
+NoJumpCooldown.MouseButton1Down:Connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.Name = "Humz"
+	game.Players.LocalPlayer.Character.Humz.WalkSpeed = 17
+end)
+
+UICorner_41.Parent = NoJumpCooldown
+
+Soon.Name = "Soon"
+Soon.Parent = MovemantFrame
+Soon.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Soon.Position = UDim2.new(1.49011612e-08, 0, 0.546666682, 0)
+Soon.Size = UDim2.new(0, 200, 0, 50)
+Soon.Font = Enum.Font.SourceSans
+Soon.Text = "Soon"
+Soon.TextColor3 = Color3.fromRGB(255, 255, 255)
+Soon.TextScaled = true
+Soon.TextSize = 14.000
+Soon.TextWrapped = true
+
+UICorner_42.Parent = Soon
+
+close_2.Name = "close"
+close_2.Parent = MovemantFrame
+close_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+close_2.Position = UDim2.new(0.907070756, 0, 0, 0)
+close_2.Size = UDim2.new(0, 46, 0, 56)
+close_2.Font = Enum.Font.SourceSans
+close_2.Text = "X"
+close_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+close_2.TextScaled = true
+close_2.TextSize = 14.000
+close_2.TextWrapped = true
+
+UICorner_43.Parent = close_2
+
+ScriptCredit_3.Name = "Script Credit"
+ScriptCredit_3.Parent = MovemantFrame
+ScriptCredit_3.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ScriptCredit_3.Position = UDim2.new(0, 0, 0.822514832, 0)
+ScriptCredit_3.Size = UDim2.new(0, 461, 0, 53)
+ScriptCredit_3.Font = Enum.Font.SourceSans
+ScriptCredit_3.Text = "Speds frame, if u use anything u sped jk heh"
+ScriptCredit_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptCredit_3.TextScaled = true
+ScriptCredit_3.TextSize = 14.000
+ScriptCredit_3.TextWrapped = true
+
+MiscFrame_7.Name = "MiscFrame"
+MiscFrame_7.Parent = ScriptCredit_3
+
+-- Scripts:
+
+local function GGSXIGD_fake_script() -- Combat.LocalScript 
+	local script = Instance.new('LocalScript', Combat)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.CombatFrame.Visible = true
+	end)
+end
+coroutine.wrap(GGSXIGD_fake_script)()
+local function WYIKB_fake_script() -- Misc.LocalScript 
+	local script = Instance.new('LocalScript', Misc)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MiscFrame.Visible = true
+	end)
+end
+coroutine.wrap(WYIKB_fake_script)()
+local function KLXAMEI_fake_script() -- Movemant.LocalScript 
+	local script = Instance.new('LocalScript', Movemant)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.MovemantFrame.Visible = true
+	end)
+end
+coroutine.wrap(KLXAMEI_fake_script)()
+local function SMGAAGN_fake_script() -- DaHoodHubPremium_2.Draggble 
+	local script = Instance.new('LocalScript', DaHoodHubPremium_2)
+
+	local UserInputService = game:GetService("UserInputService")
+
+	local gui = script.Parent
+
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = gui:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0, true); -- drag speed
+	end
+
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(SMGAAGN_fake_script)()
+local function LXHGTMN_fake_script() -- Close.Close 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(LXHGTMN_fake_script)()
+local function VTBKY_fake_script() -- Ad.Welcome 
+	local script = Instance.new('LocalScript', Ad)
+
+	wait(1)
+
+	local player = game.Players.LocalPlayer
+
+	script.Parent.Text = "Hello " .. player.Name .. " Thank you so much for buying Da Hood Hub Premium! Spread it its 350 robux. And yes, we do log your ip but it wont be selled and wont be damged to harm your pc in anyway, we do this to keep the script safe from crackes."
+end
+coroutine.wrap(VTBKY_fake_script)()
+local function FDEQB_fake_script() -- close.Close 
+	local script = Instance.new('LocalScript', close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(FDEQB_fake_script)()
+local function ODPFWW_fake_script() -- close_2.Close 
+	local script = Instance.new('LocalScript', close_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(ODPFWW_fake_script)()
+local function GNAS_fake_script() -- DaHoodHubPremium_2.Welcome 
+	local script = Instance.new('LocalScript', DaHoodHubPremium_2)
+
+	game.StarterGui:SetCore("SendNotification",{
+		Title = "[DaHoodHubPremium]";
+		Icon = "rbxassetid://6234818097";
+		Duration = 10;
+	})
+end
+coroutine.wrap(GNAS_fake_script)()

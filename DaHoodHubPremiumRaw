@@ -4,10 +4,6 @@ local Players = game:GetService("Players")
 -- // Variables
 local LocalPlayer = Players.LocalPlayer
 local Whitelisted = {
-	"DraxeTheOverTaker",
-	"TheyCallMe6Ex",
-	"getcIappedImao",
-	"0V3RGHXST",
 	"luvnxtt",
 }
 local Blacklisted = {

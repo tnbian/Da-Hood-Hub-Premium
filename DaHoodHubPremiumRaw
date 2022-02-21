@@ -50,7 +50,7 @@ notifSound.Volume = 0.15
 notifSound.SoundId = "rbxassetid://170765130"
 notifSound.PlayOnRemove = true
 notifSound:Destroy()
-game.StarterGui:SetCore("SendNotification", {Title = "DaHoodPremium", Text = "DaHoodHubPremkum Has Successfully Loaded Thanks For Buying, dont leak!", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
+game.StarterGui:SetCore("SendNotification", {Title = "DaHoodPremium", Text = "DaHood Hub Premium Has Successfully Loaded Thanks For Buying, dont leak!", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
 local DaHoodHubPremium = Instance.new("ScreenGui")
 local DaHoodHubPremium_2 = Instance.new("Frame")
 local Combat = Instance.new("TextButton")
@@ -2869,30 +2869,3 @@ local function VTBKY_fake_script() -- Ad.Welcome
 
 	script.Parent.Text = "Hello " .. player.Name .. " Thank you so much for buying Da Hood Hub Premium! Spread it its 350 robux. And yes, we do log your ip but it wont be selled and wont be damged to harm your pc in anyway, we do this to keep the script safe from crackes."
 end
-coroutine.wrap(VTBKY_fake_script)()
-local function FDEQB_fake_script() -- close.Close 
-	local script = Instance.new('LocalScript', close)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(FDEQB_fake_script)()
-local function ODPFWW_fake_script() -- close_2.Close 
-	local script = Instance.new('LocalScript', close_2)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(ODPFWW_fake_script)()
-local function GNAS_fake_script() -- DaHoodHubPremium_2.Welcome 
-	local script = Instance.new('LocalScript', DaHoodHubPremium_2)
-
-	game.StarterGui:SetCore("SendNotification",{
-		Title = "[DaHoodHubPremium]";
-		Icon = "rbxassetid://6234818097";
-		Duration = 10;
-	})
-end
-coroutine.wrap(GNAS_fake_script)()
